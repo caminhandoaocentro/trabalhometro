@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhômetro — Gastos, viagens e entregas da Presidência</title>
+  <meta name="description" content="Painel independente com dados públicos oficiais sobre gastos, viagens e entregas da Presidência da República, sempre com link para a fonte.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#" class="logo"><span class="estrela">★</span> Trabalh<span class="destaque">ô</span>metro</a>
+    <nav>
+      <a href="#gastos">Gastos</a>
+      <a href="#viagens">Viagens</a>
+      <a href="#entregas">Entregas</a>
+      <a href="#fontes">Fontes</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Dados públicos · Presidência da República</p>
+      <h1>O que entrega, quanto gasta e para onde viaja.</h1>
+      <p class="lead">Tudo com link para a fonte oficial. Sem opinião, só números.</p>
+      <div id="aviso-exemplo" class="aviso" hidden>⚠️ Exibindo <strong>dados de exemplo</strong>. Rode os scripts de captura para dados reais.</div>
+      <div class="stats">
+        <div class="stat"><span id="st-gasto">—</span><small>gasto no cartão corporativo</small></div>
+        <div class="stat"><span id="st-viagens">—</span><small>viagens registradas</small></div>
+        <div class="stat"><span id="st-paises">—</span><small>países visitados</small></div>
+        <div class="stat"><span id="st-entregas">—</span><small>entregas registradas</small></div>
+      </div>
+      <p class="atualizado">Atualizado em <span id="st-data">—</span></p>
+    </section>
+
+    <section id="gastos" class="bloco">
+      <h2>Gastos</h2>
+      <p class="sub">Cartão de Pagamento do Governo Federal (CPGF) da Presidência, por mês.</p>
+      <div id="grafico-gastos" class="barras"></div>
+    </section>
+
+    <section id="viagens" class="bloco">
+      <h2>Viagens</h2>
+      <p class="sub">Deslocamentos oficiais segundo a agenda do Presidente.</p>
+      <div id="mapa"></div>
+      <div class="filtros">
+        <button class="chip ativo" data-f="todas">Todas</button>
+        <button class="chip" data-f="nacional">Nacionais</button>
+        <button class="chip" data-f="internacional">Internacionais</button>
+      </div>
+      <ul id="lista-viagens" class="lista"></ul>
+    </section>
+
+    <section id="entregas" class="bloco">
+      <h2>Entregas</h2>
+      <p class="sub">Obras, programas e atos entregues.</p>
+      <input id="busca-entregas" type="search" placeholder="Buscar por título, área ou UF…">
+      <div id="grid-entregas" class="grid"></div>
+    </section>
+
+    <section id="fontes" class="bloco">
+      <h2>Fontes e metodologia</h2>
+      <ul class="fontes">
+        <li><a href="https://portaldatransparencia.gov.br/cartoes" target="_blank" rel="noopener">Portal da Transparência — Cartões de pagamento</a></li>
+        <li><a href="https://portaldatransparencia.gov.br/viagens" target="_blank" rel="noopener">Portal da Transparência — Viagens a serviço</a></li>
+        <li><a href="https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/agenda-do-presidente-da-republica" target="_blank" rel="noopener">Planalto — Agenda do Presidente</a></li>
+        <li><a href="https://www.gov.br/casacivil/pt-br/novopac" target="_blank" rel="noopener">Casa Civil — Novo PAC</a></li>
+        <li><a href="https://www.gov.br/obrasgov" target="_blank" rel="noopener">Obrasgov.br</a></li>
+      </ul>
+      <p class="sub">Cada registro do painel traz o link do dado original. Encontrou erro? Abra uma issue.</p>
+    </section>
+  </main>
+
+  <footer>Projeto independente, sem vínculo com o governo.</footer>
+
+  <script src="data/meta.js"></script>
+  <script src="data/gastos.js"></script>
+  <script src="data/viagens.js"></script>
+  <script src="data/entregas.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
