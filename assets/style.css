@@ -148,16 +148,40 @@ h2::before {
 }
 .sub { color: var(--mut); margin-bottom: 2rem; font-size: 1.02rem; }
 
-.barras { display: flex; align-items: flex-end; gap: 8px; height: 270px; padding-top: 2rem; }
+.barras-wrapper {
+  overflow-x: auto;
+  padding: 1rem 0 2rem;
+  -webkit-overflow-scrolling: touch;
+}
+.barras-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.barras-wrapper::-webkit-scrollbar-thumb {
+  background: var(--pt-red-subtle);
+  border-radius: 99px;
+  border: 1px solid var(--borda);
+}
+.barras-wrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--pt-red);
+}
+.barras {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 270px;
+  min-width: 820px;
+  padding-top: 2rem;
+}
 .barra {
   flex: 1;
+  min-width: 12px;
   background: var(--grad-pt);
-  border-radius: 6px 6px 0 0;
+  border-radius: 4px 4px 0 0;
   position: relative;
   min-height: 6px;
   animation: sobe .8s cubic-bezier(0.16, 1, 0.3, 1) both;
   transform-origin: bottom;
-  box-shadow: 0 0 10px rgba(215, 25, 32, 0.25);
+  box-shadow: 0 0 8px rgba(215, 25, 32, 0.2);
 }
 .barra:hover {
   filter: brightness(1.25);

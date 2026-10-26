@@ -15,10 +15,15 @@ $('#st-data').textContent = meta.atualizado_em || '—';
 
 // Gastos
 const max = Math.max(...gastos.map(g => g.valor), 1);
-$('#grafico-gastos').innerHTML = gastos.map((g, i) => `
-  <div class="barra" style="height:${(g.valor / max) * 100}%;animation-delay:${i * 40}ms" data-mes="${esc(g.mes.slice(2))}">
-    <span class="tip">${brl(g.valor)}</span>
-  </div>`).join('');
+$('#grafico-gastos').innerHTML = gastos.map((g, i) => {
+  const [ano, mes] = g.mes.split('-');
+  const rotulo = `${mes}/${ano.slice(2)}`;
+  const transacoesTxt = g.transacoes ? `<br><small style="color:var(--mut)">${g.transacoes} transações</small>` : '';
+  return `
+    <div class="barra" style="height:${Math.max((g.valor / max) * 100, 4)}%;animation-delay:${Math.min(i * 15, 600)}ms" data-mes="${esc(rotulo)}">
+      <span class="tip"><strong>${esc(rotulo)}:</strong> ${brl(g.valor)}${transacoesTxt}</span>
+    </div>`;
+}).join('');
 
 // Viagens
 const mapa = L.map('mapa', { worldCopyJump: true }).setView([-10, -40], 3);

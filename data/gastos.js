@@ -1,7 +1,269 @@
-// EXEMPLO FICTÍCIO — substituir pela saída do script Python.
-// Campos: mes (AAAA-MM), valor (R$), fonte_url
+// Dados oficiais do Cartão Corporativo (CPGF) da Presidência da República
+// Fonte: Portal da Transparência (CGU)
 window.DADOS = window.DADOS || {};
 window.DADOS.gastos = [
-  "2026-01","2026-02","2026-03","2026-04","2026-05","2026-06",
-  "2026-07","2026-08","2026-09"
-].map((mes, i) => ({ mes, valor: 100000 + i * 15000, fonte_url: "https://portaldatransparencia.gov.br/cartoes" }));
+  {
+    "mes": "2023-01",
+    "valor": 771359.53,
+    "transacoes": 702,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2023-02",
+    "valor": 638194.71,
+    "transacoes": 446,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2023-03",
+    "valor": 1355896.16,
+    "transacoes": 684,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2023-04",
+    "valor": 2064583.01,
+    "transacoes": 897,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2023-05",
+    "valor": 2137660.96,
+    "transacoes": 803,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2023-06",
+    "valor": 3063955.81,
+    "transacoes": 1130,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2023-07",
+    "valor": 1984635.17,
+    "transacoes": 939,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2023-08",
+    "valor": 2830745.79,
+    "transacoes": 1487,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2023-09",
+    "valor": 2798987.82,
+    "transacoes": 1405,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2023-10",
+    "valor": 2398479.69,
+    "transacoes": 1283,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2023-11",
+    "valor": 2560749.49,
+    "transacoes": 1451,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2023-12",
+    "valor": 1709511.42,
+    "transacoes": 1369,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-01",
+    "valor": 2285072.64,
+    "transacoes": 1005,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-02",
+    "valor": 1158768.79,
+    "transacoes": 873,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-03",
+    "valor": 1880996.27,
+    "transacoes": 1074,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-04",
+    "valor": 1669737.2,
+    "transacoes": 1143,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-05",
+    "valor": 1846362.87,
+    "transacoes": 961,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-06",
+    "valor": 1623064.67,
+    "transacoes": 1122,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-07",
+    "valor": 2354032.62,
+    "transacoes": 1095,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-08",
+    "valor": 2445634.8,
+    "transacoes": 1074,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-09",
+    "valor": 1929494.84,
+    "transacoes": 1043,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-10",
+    "valor": 1650986.86,
+    "transacoes": 943,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-11",
+    "valor": 4855163.65,
+    "transacoes": 1098,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2024-12",
+    "valor": 2927728.79,
+    "transacoes": 914,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-01",
+    "valor": 1454014.28,
+    "transacoes": 878,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-02",
+    "valor": 637192.01,
+    "transacoes": 649,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-03",
+    "valor": 2166876.94,
+    "transacoes": 1011,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-04",
+    "valor": 1680569.89,
+    "transacoes": 1029,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-05",
+    "valor": 1952609.53,
+    "transacoes": 1160,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-06",
+    "valor": 1983934.81,
+    "transacoes": 1141,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-07",
+    "valor": 2229377.83,
+    "transacoes": 1137,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-08",
+    "valor": 3150561.92,
+    "transacoes": 1378,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-09",
+    "valor": 1466958.69,
+    "transacoes": 1178,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-10",
+    "valor": 1290693.73,
+    "transacoes": 1129,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-11",
+    "valor": 1910428.01,
+    "transacoes": 1137,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2025-12",
+    "valor": 3206313.12,
+    "transacoes": 1307,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2026-01",
+    "valor": 1484748.06,
+    "transacoes": 1425,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2026-02",
+    "valor": 848240.05,
+    "transacoes": 816,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2026-03",
+    "valor": 932623.35,
+    "transacoes": 928,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2026-04",
+    "valor": 1354590.21,
+    "transacoes": 1068,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2026-05",
+    "valor": 1314241.03,
+    "transacoes": 939,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2026-06",
+    "valor": 1473001.26,
+    "transacoes": 1290,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2026-07",
+    "valor": 1402577.0,
+    "transacoes": 1201,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  },
+  {
+    "mes": "2026-08",
+    "valor": 1664953.87,
+    "transacoes": 1064,
+    "fonte_url": "https://portaldatransparencia.gov.br/cartoes"
+  }
+];

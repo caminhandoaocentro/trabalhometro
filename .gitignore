@@ -1,3 +1,9 @@
 .DS_Store
 Thumbs.db
 *.log
+.venv/
+__pycache__/
+*.pyc
+.env
+.cache/
+data/raw/
