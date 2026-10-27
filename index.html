@@ -39,13 +39,25 @@
     <section id="gastos" class="bloco">
       <h2>Gastos</h2>
       <p class="sub">Cartão de Pagamento do Governo Federal (CPGF) da Presidência da República, mês a mês.</p>
-      <div class="grafico-cabecalho">
-        <span>Histórico mensal consolidado</span>
-        <span class="dica-scroll">⇄ Role para navegar pelos meses</span>
+      
+      <div id="destaque-gastos-box" class="destaque-box"></div>
+
+      <div class="grafico-controles">
+        <div class="filtros-anos">
+          <span style="font-size:0.85rem;color:var(--mut);margin-right:0.3rem">Filtrar ano:</span>
+          <button class="chip-ano ativo" data-ano="todos">Todos</button>
+          <button class="chip-ano" data-ano="2026">2026</button>
+          <button class="chip-ano" data-ano="2025">2025</button>
+          <button class="chip-ano" data-ano="2024">2024</button>
+          <button class="chip-ano" data-ano="2023">2023</button>
+        </div>
+        <span class="dica-scroll">⇄ Arraste para navegar</span>
       </div>
-      <div class="barras-wrapper">
+
+      <div class="barras-wrapper" id="barras-scroll-container">
         <div id="grafico-gastos" class="barras"></div>
       </div>
+      <p class="nota-defasagem">ℹ️ <strong>Transparência oficial:</strong> Os dados de faturas do cartão corporativo são disponibilizados pela CGU após a liquidação bancária pelo Banco do Brasil, com defasagem técnica natural de 30 a 60 dias.</p>
     </section>
 
     <section id="viagens" class="bloco">

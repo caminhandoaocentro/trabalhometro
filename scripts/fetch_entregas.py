@@ -1,6 +1,6 @@
 """
 Catálogo oficial de entregas, programas e leis sancionadas pela Presidência.
-Fontes: Planalto Legislação, Casa Civil (Novo PAC) e Obrasgov.br.
+Fontes: Planalto Legislação, Casa Civil (Novo PAC), Diário Oficial da União e Ministérios.
 """
 import json
 from pathlib import Path
@@ -8,17 +8,34 @@ from config import DATA_DIR
 
 LEGISLACAO_URL = "https://www.planalto.gov.br/legislacao"
 NOVOPAC_URL = "https://www.gov.br/casacivil/pt-br/novopac"
-AGENCIA_GOV_URL = "https://agenciagov.ebc.com.br"
 
 ENTREGAS_OFICIAIS = [
+    {
+        "data": "2023-01-11",
+        "titulo": "Criação do Ministério dos Povos Indígenas e Demarcações",
+        "area": "Direitos Humanos",
+        "uf": "BR",
+        "valor": None,
+        "descricao": "Criação inédita do Ministério dos Povos Indígenas e homologação de 10 terras indígenas após anos de paralisação.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14600.htm"
+    },
     {
         "data": "2023-03-02",
         "titulo": "Novo Bolsa Família (MP 1.164 / Lei 14.601)",
         "area": "Social",
         "uf": "BR",
         "valor": 600.0,
-        "descricao": "Reformulação do programa de transferência de renda com benefício mínimo de R$ 600 mais R$ 150 por criança de até 6 anos e acompanhamento escolar e vacinal.",
+        "descricao": "Benefício mínimo de R$ 600 com adicional de R$ 150 por criança até 6 anos e R$ 50 para gestantes e jovens de 7 a 18 anos, condicionado à vacinação e frequência escolar.",
         "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+    },
+    {
+        "data": "2023-07-03",
+        "titulo": "Lei da Igualdade Salarial entre Homens e Mulheres (Lei 14.611)",
+        "area": "Trabalho",
+        "uf": "BR",
+        "valor": None,
+        "descricao": "Obrigatoriedade de igualdade salarial para funções iguais e critérios de transparência salarial com fiscalização reforçada nas empresas.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14611.htm"
     },
     {
         "data": "2023-07-13",
@@ -26,7 +43,7 @@ ENTREGAS_OFICIAIS = [
         "area": "Habitação",
         "uf": "BR",
         "valor": 13700000000,
-        "descricao": "Retomada da Faixa 1 para famílias com renda de até R$ 2.640, subsídios ampliados e prioridade para mulheres chefes de família.",
+        "descricao": "Retomada da Faixa 1 com subsídios de até 95%, isenção para beneficiários do BPC/Bolsa Família e prioridade para mulheres chefes de família.",
         "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm"
     },
     {
@@ -35,8 +52,26 @@ ENTREGAS_OFICIAIS = [
         "area": "Infraestrutura",
         "uf": "BR",
         "valor": 1700000000000,
-        "descricao": "Plano de investimentos públicos e privados em transição ecológica, energia, cidades sustentáveis, ferrovias, portos e saúde.",
+        "descricao": "Plano de investimentos públicos e privados em transição ecológica, energia limpa, cidades sustentáveis, rodovias, ferrovias, portos e saúde.",
         "fonte_url": NOVOPAC_URL
+    },
+    {
+        "data": "2023-08-28",
+        "titulo": "Política de Valorização Permanente do Salário Mínimo (Lei 14.663)",
+        "area": "Trabalho",
+        "uf": "BR",
+        "valor": None,
+        "descricao": "Retomada da regra de aumento real anual do salário mínimo baseada na inflação (INPC) somada à variação positiva do PIB.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14663.htm"
+    },
+    {
+        "data": "2023-08-31",
+        "titulo": "Plano Brasil Sem Fome",
+        "area": "Social",
+        "uf": "BR",
+        "valor": None,
+        "descricao": "Conjunto de 80 ações interministeriais integrando alimentação escolar, compras públicas da agricultura familiar e restaurantes populares.",
+        "fonte_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/brasil-sem-fome"
     },
     {
         "data": "2023-10-03",
@@ -44,16 +79,16 @@ ENTREGAS_OFICIAIS = [
         "area": "Economia",
         "uf": "BR",
         "valor": 53000000000,
-        "descricao": "Renegociação de dívidas bancárias e de consumo para milhões de famílias com descontos médios de 83% e teto para juros do rotativo.",
+        "descricao": "Renegociação de dívidas bancárias e comerciais para mais de 15 milhões de famílias com descontos médios de 83% e teto para juros do cartão rotativo.",
         "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14690.htm"
     },
     {
         "data": "2023-12-20",
-        "titulo": "Promulgação da Reforma Tributária sobre o Consumo (EC 132)",
+        "titulo": "Promulgação da Reforma Tributária do Consumo (EC 132)",
         "area": "Economia",
         "uf": "BR",
         "valor": None,
-        "descricao": "Simplificação de 5 tributos (PIS, Cofins, IPI, ICMS e ISS) no IVA Dual (CBS e IBS) e isenção da cesta básica nacional.",
+        "descricao": "Aprovação histórica da unificação de 5 impostos (PIS, Cofins, IPI, ICMS, ISS) no IVA Dual (CBS e IBS), com cashback social e cesta básica isenta.",
         "fonte_url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
     },
     {
@@ -62,44 +97,80 @@ ENTREGAS_OFICIAIS = [
         "area": "Educação",
         "uf": "BR",
         "valor": 7100000000,
-        "descricao": "Poupança e incentivo financeiro para permanência e conclusão de estudantes do ensino médio público inscritos no CadÚnico.",
+        "descricao": "Poupança e incentivo financeiro mensal para permanência e conclusão de quase 4 milhões de estudantes do ensino médio público.",
         "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14818.htm"
     },
     {
+        "data": "2024-01-22",
+        "titulo": "Nova Indústria Brasil (NIB)",
+        "area": "Indústria",
+        "uf": "BR",
+        "valor": 300000000000,
+        "descricao": "Política industrial focada em transição energética, bioeconomia, complexo econômico da saúde, infraestrutura e transformação digital até 2033.",
+        "fonte_url": "https://www.gov.br/mdic/pt-br/assuntos/noticias/2024/janeiro/governo-lanca-nova-politica-industrial"
+    },
+    {
         "data": "2024-03-07",
-        "titulo": "Seleção das Obras do Novo PAC Seleções",
+        "titulo": "PAC Seleções — R$ 65,2 bilhões para Municípios",
         "area": "Infraestrutura",
         "uf": "BR",
         "valor": 65200000000,
-        "descricao": "Mais de 6,7 mil obras em saúde, educação e esporte selecionadas para municípios de todos os estados do país.",
+        "descricao": "Mais de 6,7 mil obras em creches, postos de saúde (UBS), policlínicas, maternidades e centros esportivos em todos os estados.",
         "fonte_url": NOVOPAC_URL
     },
     {
         "data": "2024-04-22",
-        "titulo": "Lançamento do Programa Acredita (Lei 14.995)",
+        "titulo": "Programa Acredita — Microcrédito e Renegociação (Lei 14.995)",
         "area": "Economia",
         "uf": "BR",
         "valor": 30000000000,
-        "descricao": "Crédito orientado para MEIs, microempresas e empreendedores do CadÚnico, além de renegociação de dívidas com Procred360.",
+        "descricao": "Crédito produtivo para MEIs, pequenos negócios e inscritos no CadÚnico, além do programa Procred360 e Eco Invest Brasil.",
         "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14995.htm"
     },
     {
+        "data": "2024-05-01",
+        "titulo": "Isenção do Imposto de Renda até 2 Salários Mínimos (Lei 14.848)",
+        "area": "Economia",
+        "uf": "BR",
+        "valor": None,
+        "descricao": "Reajuste da faixa de isenção do IRPF beneficiando mais de 15 milhões de trabalhadores e aposentados.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14848.htm"
+    },
+    {
         "data": "2024-07-10",
-        "titulo": "Universalização do Farmácia Popular (Absorventes e 100% Gratuito no Bolsa Família)",
+        "titulo": "Universalização do Farmácia Popular e Dignidade Menstrual",
         "area": "Saúde",
         "uf": "BR",
         "valor": None,
-        "descricao": "Distribuição gratuita de absorventes pelo Programa Dignidade Menstrual e ampliação de gratuidade em remédios para asma, diabetes e hipertensão.",
+        "descricao": "Gratuidade total de todos os medicamentos do programa para beneficiários do Bolsa Família e distribuição nacional gratuita de absorventes.",
         "fonte_url": "https://www.gov.br/saude/pt-br/composicao/sectics/farmacia-popular"
     },
     {
-        "data": "2024-08-28",
-        "titulo": "Pacto Nacional pela Retomada de Obras da Educação",
-        "area": "Educação",
+        "data": "2024-08-18",
+        "titulo": "Realização do Concurso Público Nacional Unificado (CPNU)",
+        "area": "Gestão",
         "uf": "BR",
-        "valor": 3800000000,
-        "descricao": "Retomada de creches, escolas e quadras poliesportivas paralisadas ou inacabadas em todo o território nacional.",
-        "fonte_url": "https://www.gov.br/mec/pt-br/assuntos/noticias/2024/agosto/governo-retoma-obras-da-educacao"
+        "valor": None,
+        "descricao": "Maior concurso público da história do Brasil com 6,6 mil vagas federais em 228 cidades simultaneamente, descentralizando o acesso ao serviço público.",
+        "fonte_url": "https://www.gov.br/gestao/pt-br/concursonacional"
+    },
+    {
+        "data": "2024-10-25",
+        "titulo": "Acordo Histórico da Repactuação de Mariana/Rio Doce",
+        "area": "Meio Ambiente",
+        "uf": "MG/ES",
+        "valor": 170000000000,
+        "descricao": "Acordo definitivo firmado no Palácio do Planalto destinando R$ 170 bilhões para recuperação ambiental e indenização das comunidades da Bacia do Rio Doce.",
+        "fonte_url": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2024/10/governo-firma-acordo-historico-de-reparacao-do-desastre-de-mariana"
+    },
+    {
+        "data": "2024-11-18",
+        "titulo": "Cúpula do G20 no Brasil e Aliança Global contra a Fome",
+        "area": "Internacional",
+        "uf": "RJ",
+        "valor": None,
+        "descricao": "Liderança brasileira no G20 no Rio de Janeiro com a adesão formal de mais de 80 países e dezenas de organismos à Aliança Global contra a Fome e a Pobreza.",
+        "fonte_url": "https://www.g20.org/pt-br"
     }
 ]
 

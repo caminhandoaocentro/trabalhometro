@@ -168,24 +168,91 @@ h2::before {
 }
 .sub { color: var(--mut); margin-bottom: 1.8rem; font-size: 1.02rem; }
 
-/* Gráfico de Barras com rolagem limpa */
-.grafico-cabecalho {
+/* Destaque do Último Mês e Controles do Gráfico */
+.destaque-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+.destaque-mini {
+  background: var(--bg-card);
+  border: 1px solid var(--borda);
+  border-radius: 14px;
+  padding: 1.1rem 1.3rem;
+  border-left: 4px solid var(--pt-red);
+}
+.destaque-mini .rotulo {
+  font-size: 0.8rem;
+  color: var(--mut);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.destaque-mini .valor-destaque {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--pt-white);
+  font-family: Outfit, sans-serif;
+}
+.destaque-mini .detalhe {
+  font-size: 0.82rem;
+  color: var(--pt-red-light);
+  margin-top: 0.2rem;
+}
+
+.grafico-controles {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
   margin-bottom: 0.8rem;
-  font-size: 0.85rem;
-  color: var(--mut);
 }
-.grafico-cabecalho .dica-scroll {
+.filtros-anos {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.chip-ano {
+  background: var(--bg-card);
+  color: var(--mut);
+  border: 1px solid var(--borda);
+  padding: 0.3rem 0.85rem;
+  border-radius: 99px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.chip-ano.ativo, .chip-ano:hover {
+  color: var(--pt-white);
+  background: var(--pt-red);
+  border-color: var(--pt-red-light);
+}
+
+.dica-scroll {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
   background: var(--pt-red-subtle);
   color: var(--pt-red-light);
-  padding: 0.2rem 0.6rem;
+  padding: 0.25rem 0.7rem;
   border-radius: 99px;
-  font-size: 0.76rem;
+  font-size: 0.78rem;
+}
+
+.nota-defasagem {
+  font-size: 0.82rem;
+  color: var(--mut);
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 .barras-wrapper {
   overflow-x: auto;

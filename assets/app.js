@@ -48,24 +48,82 @@ $('#st-entregas').textContent = entregas.length;
 $('#st-data').textContent = meta.atualizado_em || '—';
 
 // 2. Gráfico de Gastos (Cartão Corporativo)
+const destaqueBoxEl = $('#destaque-gastos-box');
+const containerScroll = $('#barras-scroll-container');
 const graficoEl = $('#grafico-gastos');
-if (graficoEl && gastos.length > 0) {
-  const max = Math.max(...gastos.map(g => Number(g.valor) || 0), 1);
-  graficoEl.innerHTML = gastos.map((g, i) => {
-    const valor = Number(g.valor) || 0;
-    const [ano, mes] = (g.mes || '----').split('-');
-    const rotulo = `${mes}/${ano ? ano.slice(2) : ''}`;
-    const alturaPct = Math.max((valor / max) * 100, 4);
-    const transTxt = g.transacoes ? `<br><small style="color:var(--mut);font-weight:400">${g.transacoes} transações</small>` : '';
 
-    return `
-      <div class="barra" style="height:${alturaPct}%;animation-delay:${Math.min(i * 12, 500)}ms" data-mes="${esc(rotulo)}">
-        <span class="tip">
-          <strong>${esc(rotulo)}:</strong> ${brl(valor)}
-          ${transTxt}
-        </span>
-      </div>`;
-  }).join('');
+if (gastos.length > 0) {
+  // Último mês consolidado
+  const ultimoGasto = gastos[gastos.length - 1];
+  const [uAno, uMes] = (ultimoGasto.mes || '').split('-');
+  const mesesNomes = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+  const nomeMesExtenso = mesesNomes[parseInt(uMes, 10) - 1] || uMes;
+  const mediaMensal = totalGastos / gastos.length;
+
+  if (destaqueBoxEl) {
+    destaqueBoxEl.innerHTML = `
+      <div class="destaque-mini">
+        <div class="rotulo">Último Mês Disponível (CGU)</div>
+        <div class="valor-destaque">${brl(ultimoGasto.valor)}</div>
+        <div class="detalhe">📅 ${nomeMesExtenso}/${uAno} · ${ultimoGasto.transacoes || 0} transações</div>
+      </div>
+      <div class="destaque-mini">
+        <div class="rotulo">Média Mensal Oficial</div>
+        <div class="valor-destaque">${brl(mediaMensal)}</div>
+        <div class="detalhe">Base de 44 meses catalogados</div>
+      </div>
+      <div class="destaque-mini">
+        <div class="rotulo">Total Acumulado (Mandato)</div>
+        <div class="valor-destaque">${brlResumido(totalGastos)}</div>
+        <div class="detalhe">Cartão de Pagamento do Gov. Federal</div>
+      </div>
+    `;
+  }
+
+  function renderGrafico(filtroAno = 'todos') {
+    const listaFiltrada = gastos.filter(g => {
+      if (filtroAno === 'todos') return true;
+      return (g.mes || '').startsWith(filtroAno);
+    });
+
+    if (!graficoEl) return;
+    const max = Math.max(...listaFiltrada.map(g => Number(g.valor) || 0), 1);
+
+    graficoEl.style.minWidth = filtroAno === 'todos' ? '920px' : '100%';
+    graficoEl.innerHTML = listaFiltrada.map((g, i) => {
+      const valor = Number(g.valor) || 0;
+      const [ano, mes] = (g.mes || '----').split('-');
+      const rotulo = `${mes}/${ano ? ano.slice(2) : ''}`;
+      const alturaPct = Math.max((valor / max) * 100, 5);
+      const transTxt = g.transacoes ? `<br><small style="color:var(--mut);font-weight:400">${g.transacoes} transações</small>` : '';
+
+      return `
+        <div class="barra" style="height:${alturaPct}%;animation-delay:${Math.min(i * 12, 400)}ms" data-mes="${esc(rotulo)}">
+          <span class="tip">
+            <strong>${esc(rotulo)}:</strong> ${brl(valor)}
+            ${transTxt}
+          </span>
+        </div>`;
+    }).join('');
+
+    // Rola automaticamente para os meses mais recentes à direita
+    if (containerScroll) {
+      setTimeout(() => {
+        containerScroll.scrollTo({ left: containerScroll.scrollWidth, behavior: 'smooth' });
+      }, 100);
+    }
+  }
+
+  // Eventos dos filtros por ano
+  document.querySelectorAll('.chip-ano').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.chip-ano').forEach(b => b.classList.remove('ativo'));
+      btn.classList.add('ativo');
+      renderGrafico(btn.dataset.ano);
+    });
+  });
+
+  renderGrafico('todos');
 }
 
 // 3. Viagens e Mapa
