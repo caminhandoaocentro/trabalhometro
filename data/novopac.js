@@ -1,0 +1,69 @@
+// Dados de Transparência do Novo PAC
+// Fonte oficial: Casa Civil da Presidência da República
+window.DADOS = window.DADOS || {};
+window.DADOS.novopac = {
+  "investimento_total": "R$ 1,9 tri",
+  "investimento_mandato_2023_2026": "R$ 1,3 tri",
+  "investimento_pos_2026": "R$ 0,6 tri",
+  "total_empreendimentos": "41,1 mil",
+  "fontes_financiamento": [
+    {
+      "fonte": "Setor Privado",
+      "valor": "R$ 765 bi",
+      "percentual": 40
+    },
+    {
+      "fonte": "Empresas Estatais",
+      "valor": "R$ 408 bi",
+      "percentual": 21
+    },
+    {
+      "fonte": "Financiamentos (BNDES/Caixa/BB)",
+      "valor": "R$ 384 bi",
+      "percentual": 20
+    },
+    {
+      "fonte": "Orçamento Geral da União (OGU)",
+      "valor": "R$ 358 bi",
+      "percentual": 18
+    },
+    {
+      "fonte": "Fundos Setoriais",
+      "valor": "R$ 26 bi",
+      "percentual": 1
+    }
+  ],
+  "eixos_principais": [
+    {
+      "nome": "Cidades Sustentáveis e Resilientes",
+      "foco": "Minha Casa Minha Vida, contenção de encostas e esgoto"
+    },
+    {
+      "nome": "Transição e Segurança Energética",
+      "foco": "Energia solar, eólica, linhas de transmissão e biocombustíveis"
+    },
+    {
+      "nome": "Transporte Eficiente e Sustentável",
+      "foco": "Rodovias, ferrovias (Transnordestina, FIOL), hidrovias e portos"
+    },
+    {
+      "nome": "Educação, Ciência e Tecnologia",
+      "foco": "Creches, escolas de tempo integral, universidades e institutos federais"
+    },
+    {
+      "nome": "Saúde",
+      "foco": "Policlínicas, maternidades, ambulâncias do SAMU e UBS"
+    },
+    {
+      "nome": "Água para Todos",
+      "foco": "Segurança hídrica, canais, adutoras e revitalização de bacias"
+    },
+    {
+      "nome": "Inclusão Digital e Conectividade",
+      "foco": "Internet de alta velocidade em 138 mil escolas e 4G/5G"
+    }
+  ],
+  "fonte_url": "https://www.gov.br/casacivil/pt-br/novopac/transparencia",
+  "transferegov_url": "https://www.transferegov.sistema.gov.br",
+  "mapa_estados_url": "https://www.gov.br/casacivil/pt-br/novopac/mapas-de-obras-por-estados"
+};

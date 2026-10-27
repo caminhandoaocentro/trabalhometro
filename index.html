@@ -16,6 +16,7 @@
     <nav>
       <a href="#gastos">Gastos</a>
       <a href="#viagens">Viagens</a>
+      <a href="#pac">Novo PAC</a>
       <a href="#entregas">Entregas</a>
       <a href="#fontes">Fontes</a>
     </nav>
@@ -72,6 +73,40 @@
       <ul id="lista-viagens" class="lista"></ul>
     </section>
 
+    <section id="pac" class="bloco">
+      <h2>Novo PAC — Transparência Oficial</h2>
+      <p class="sub">Painel auditado pela Casa Civil da Presidência da República com a execução e fontes do programa.</p>
+      
+      <div id="pac-stats" class="pac-grid-stats"></div>
+
+      <div class="pac-painel-detalhe">
+        <div class="pac-col">
+          <h3>Fontes de Financiamento</h3>
+          <p class="sub-mini">Distribuição dos R$ 1,9 trilhão previstos</p>
+          <div id="pac-fontes" class="pac-barras-fontes"></div>
+        </div>
+
+        <div class="pac-col">
+          <h3>Fiscalização e Obras por Estado</h3>
+          <p class="sub-mini">Acesso direto às bases de monitoramento público</p>
+          <div class="pac-links-uteis">
+            <a href="https://www.gov.br/casacivil/pt-br/novopac/transparencia" target="_blank" rel="noopener" class="pac-btn-link">
+              <strong>Painel Oficial de Transparência</strong>
+              <small>Casa Civil / Presidência da República →</small>
+            </a>
+            <a href="https://www.gov.br/casacivil/pt-br/novopac/mapas-de-obras-por-estados" target="_blank" rel="noopener" class="pac-btn-link">
+              <strong>Mapa de Obras por Estado</strong>
+              <small>Filtre por município, rodovias, ferrovias e saúde →</small>
+            </a>
+            <a href="https://www.transferegov.sistema.gov.br" target="_blank" rel="noopener" class="pac-btn-link">
+              <strong>Plataforma Transferegov.br</strong>
+              <small>Acompanhamento de repasses e prestação de contas →</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="entregas" class="bloco">
       <h2>Entregas e Ações</h2>
       <p class="sub">Obras, programas sociais, reformas e leis sancionadas pela Presidência.</p>
@@ -106,6 +141,7 @@
   <script src="data/meta.js"></script>
   <script src="data/gastos.js"></script>
   <script src="data/viagens.js"></script>
+  <script src="data/novopac.js"></script>
   <script src="data/entregas.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="assets/app.js"></script>

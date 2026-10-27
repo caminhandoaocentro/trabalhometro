@@ -394,6 +394,113 @@ h2::before {
   box-shadow: 0 0 10px var(--pt-red-glow);
 }
 
+/* Seção Novo PAC — Transparência */
+.pac-grid-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+.pac-card-stat {
+  background: var(--bg-card);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  padding: 1.4rem;
+  text-align: left;
+  border-top: 3px solid var(--pt-red);
+}
+.pac-card-stat .valor {
+  font-family: Outfit, sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--pt-white);
+  line-height: 1.1;
+  margin-bottom: 0.3rem;
+}
+.pac-card-stat .rotulo {
+  color: var(--mut);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.pac-painel-detalhe {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.pac-col {
+  background: var(--bg-card);
+  border: 1px solid var(--borda);
+  border-radius: 18px;
+  padding: 1.8rem;
+}
+.pac-col h3 {
+  font-size: 1.25rem;
+  color: var(--pt-white);
+  margin-bottom: 0.2rem;
+}
+.sub-mini {
+  color: var(--mut);
+  font-size: 0.85rem;
+  margin-bottom: 1.4rem;
+}
+
+.pac-fonte-item {
+  margin-bottom: 1rem;
+}
+.pac-fonte-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  margin-bottom: 0.35rem;
+}
+.pac-fonte-info strong { color: var(--pt-white); }
+.pac-fonte-info span { color: var(--pt-red-light); font-weight: 600; }
+.pac-barra-trilho {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.pac-barra-progresso {
+  height: 100%;
+  background: var(--grad-pt);
+  border-radius: 99px;
+}
+
+.pac-links-uteis {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.pac-btn-link {
+  display: block;
+  background: rgba(215, 25, 32, 0.08);
+  border: 1px solid var(--borda);
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+.pac-btn-link:hover {
+  background: rgba(215, 25, 32, 0.2);
+  border-color: var(--pt-red);
+  transform: translateX(4px);
+  text-decoration: none;
+}
+.pac-btn-link strong {
+  display: block;
+  color: var(--pt-white);
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+.pac-btn-link small {
+  color: var(--mut);
+  font-size: 0.82rem;
+}
+
 #busca-entregas {
   width: 100%; padding: .9rem 1.2rem; margin-bottom: 1.8rem; border-radius: 12px;
   background: var(--bg-card); border: 1px solid var(--borda); color: var(--txt); font: inherit;

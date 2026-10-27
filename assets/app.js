@@ -241,3 +241,44 @@ document.querySelectorAll('.chip-entrega').forEach(btn => {
 });
 
 renderEntregas();
+
+// 5. Novo PAC — Transparência Oficial
+const pac = D.novopac;
+if (pac) {
+  const pacStatsEl = $('#pac-stats');
+  if (pacStatsEl) {
+    pacStatsEl.innerHTML = `
+      <div class="pac-card-stat">
+        <div class="valor">${esc(pac.investimento_total)}</div>
+        <div class="rotulo">Investimento Previsto Total</div>
+      </div>
+      <div class="pac-card-stat">
+        <div class="valor">${esc(pac.investimento_mandato_2023_2026)}</div>
+        <div class="rotulo">Previsto até 2026 (Mandato)</div>
+      </div>
+      <div class="pac-card-stat">
+        <div class="valor">${esc(pac.total_empreendimentos)}</div>
+        <div class="rotulo">Obras e Empreendimentos Mapeados</div>
+      </div>
+      <div class="pac-card-stat">
+        <div class="valor">${esc(pac.fontes_financiamento[0].valor)}</div>
+        <div class="rotulo">Atração de Investimentos Privados</div>
+      </div>
+    `;
+  }
+
+  const pacFontesEl = $('#pac-fontes');
+  if (pacFontesEl && pac.fontes_financiamento) {
+    pacFontesEl.innerHTML = pac.fontes_financiamento.map(f => `
+      <div class="pac-fonte-item">
+        <div class="pac-fonte-info">
+          <strong>${esc(f.fonte)}</strong>
+          <span>${esc(f.valor)} (${f.percentual}%)</span>
+        </div>
+        <div class="pac-barra-trilho">
+          <div class="pac-barra-progresso" style="width: ${f.percentual}%"></div>
+        </div>
+      </div>
+    `).join('');
+  }
+}

@@ -9,6 +9,7 @@ from config import DATA_DIR
 import fetch_cartao
 import fetch_viagens_oficiais
 import fetch_viagens_api
+import fetch_novopac
 import fetch_entregas
 
 
@@ -18,11 +19,11 @@ def atualizar_tudo():
     print("=" * 65)
 
     # 1. Gastos (Cartão Corporativo CPGF)
-    print("\n[1/3] Atualizando Gastos do Cartão Corporativo...")
+    print("\n[1/4] Atualizando Gastos do Cartão Corporativo...")
     gastos = fetch_cartao.atualizar_gastos()
 
     # 2. Viagens (API Oficial da CGU + Viagens de Estado/Internacionais)
-    print("\n[2/3] Atualizando Viagens Oficiais...")
+    print("\n[2/4] Atualizando Viagens Oficiais...")
     viagens_api = fetch_viagens_api.processar_viagens_api(limite_meses=12)
     viagens_estado = fetch_viagens_oficiais.VIAGENS_OFICIAIS
 
@@ -50,8 +51,12 @@ def atualizar_tudo():
         f.write(conteudo_viagens)
     print(f"[✓] {len(todas_viagens)} viagens oficiais consolidadas com sucesso em {output_viagens}!")
 
-    # 3. Entregas
-    print("\n[3/3] Atualizando Entregas Oficiais...")
+    # 3. Novo PAC Transparência
+    print("\n[3/4] Atualizando Dados Oficiais do Novo PAC...")
+    pac_dados = fetch_novopac.extrair_dados_novopac()
+
+    # 4. Entregas e Reformas
+    print("\n[4/4] Atualizando Entregas Oficiais...")
     entregas = fetch_entregas.consolidar_entregas()
 
     # 4. Metadados
