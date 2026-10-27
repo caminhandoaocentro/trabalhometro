@@ -333,11 +333,69 @@ h2::before {
 
 /* Mapa */
 #mapa {
-  height: 440px;
+  height: 460px;
   border-radius: 18px;
   border: 1px solid var(--borda);
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   z-index: 10;
+  background: #1a1a1c;
+}
+
+/* Customização dos Popups do Leaflet */
+.leaflet-popup-content-wrapper {
+  background: rgba(20, 10, 12, 0.95) !important;
+  border: 1px solid var(--borda-hover) !important;
+  color: var(--txt) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(14px);
+  padding: 0 !important;
+}
+.leaflet-popup-content {
+  margin: 1rem 1.2rem !important;
+  line-height: 1.5 !important;
+}
+.leaflet-popup-tip {
+  background: rgba(20, 10, 12, 0.95) !important;
+  border: 1px solid var(--borda-hover) !important;
+}
+.popup-viagem {
+  font-family: Inter, system-ui, sans-serif;
+}
+.popup-viagem .titulo {
+  font-size: 1.05rem;
+  color: var(--pt-white);
+  display: block;
+  font-family: Outfit, sans-serif;
+}
+.popup-viagem .pais {
+  display: inline-block;
+  font-size: 0.72rem;
+  background: var(--pt-red-subtle);
+  color: var(--pt-red-light);
+  border: 1px solid rgba(215, 25, 32, 0.3);
+  padding: 0.15rem 0.5rem;
+  border-radius: 99px;
+  margin: 0.2rem 0 0.4rem;
+  font-weight: 600;
+}
+.popup-viagem .data {
+  font-size: 0.78rem;
+  color: var(--mut);
+  margin-bottom: 0.35rem;
+}
+.popup-viagem .motivo {
+  font-size: 0.84rem;
+  color: var(--txt);
+  opacity: 0.9;
+  margin: 0.3rem 0 0.6rem;
+}
+.popup-viagem .link-fonte {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--pt-red-light);
+  text-decoration: underline;
 }
 .filtros { margin: 1.4rem 0 1rem; display: flex; gap: .6rem; flex-wrap: wrap; }
 .chip {

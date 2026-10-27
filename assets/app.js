@@ -129,9 +129,22 @@ if (gastos.length > 0) {
 // 3. Viagens e Mapa
 let mapa;
 try {
-  mapa = L.map('mapa', { worldCopyJump: true }).setView([-12, -45], 3);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; OpenStreetMap &copy; CARTO'
+  mapa = L.map('mapa', {
+    worldCopyJump: true,
+    minZoom: 2,
+    maxZoom: 16
+  }).setView([-14, -51], 3);
+
+  // Mapa escuro oficial sem marca d'água (Esri World Dark Gray Canvas)
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: '&copy; Esri &copy; OpenStreetMap',
+    maxZoom: 16
+  }).addTo(mapa);
+
+  // Linhas e referências de países sutis
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 16,
+    opacity: 0.85
   }).addTo(mapa);
 
   // Corrige renderização de tiles
@@ -149,17 +162,20 @@ function renderViagens(filtro) {
     camada.clearLayers();
     lista.forEach(v => {
       if (v.lat != null && v.lon != null) {
+        const isInt = v.tipo === 'internacional';
         L.circleMarker([v.lat, v.lon], {
-          radius: 7,
-          color: v.tipo === 'internacional' ? '#fdb813' : '#D71920',
-          fillColor: v.tipo === 'internacional' ? '#ffffff' : '#ff3843',
-          fillOpacity: 0.9,
+          radius: isInt ? 8 : 6.5,
+          color: isInt ? '#fdb813' : '#D71920',
+          fillColor: isInt ? '#ffffff' : '#ff3843',
+          fillOpacity: 0.95,
           weight: 2
         }).bindPopup(`
-          <div style="font-family:Inter,sans-serif;color:#111">
-            <strong style="font-size:1.05rem;color:#BA0C2F">${esc(v.local)}</strong> (${esc(v.pais || 'Brasil')})<br>
-            <small style="color:#666">${esc(v.data)}</small>
-            <p style="margin:4px 0 0;font-size:0.85rem">${esc(v.motivo || '')}</p>
+          <div class="popup-viagem">
+            <strong class="titulo">${esc(v.local)}</strong>
+            <span class="pais">${esc(v.pais || 'Brasil')}</span>
+            <div class="data">📅 ${esc(v.data)}</div>
+            <p class="motivo">${esc(v.motivo || '')}</p>
+            <a href="${esc(v.fonte_url)}" target="_blank" rel="noopener" class="link-fonte">Ver registro oficial →</a>
           </div>
         `).addTo(camada);
       }
