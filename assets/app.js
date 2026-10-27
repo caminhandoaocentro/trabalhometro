@@ -194,11 +194,16 @@ document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () =
 renderViagens('todas');
 
 // 4. Entregas e Busca
-function renderEntregas(q = '') {
-  q = q.toLowerCase();
-  const lista = entregas.filter(e =>
-    [e.titulo, e.area, e.uf, e.descricao || ''].join(' ').toLowerCase().includes(q)
-  );
+let filtroAnoEntrega = 'todos';
+
+function renderEntregas() {
+  const q = (buscaInput ? buscaInput.value : '').toLowerCase().trim();
+  const lista = entregas.filter(e => {
+    const matchAno = filtroAnoEntrega === 'todos' || (e.data || '').startsWith(filtroAnoEntrega);
+    if (!matchAno) return false;
+    if (!q) return true;
+    return [e.titulo, e.area, e.uf, e.descricao || '', e.data || ''].join(' ').toLowerCase().includes(q);
+  });
 
   const gridEl = $('#grid-entregas');
   if (!gridEl) return;
@@ -218,12 +223,21 @@ function renderEntregas(q = '') {
           <a href="${esc(e.fonte_url)}" target="_blank" rel="noopener">Ver documento oficial →</a>
         </div>
       </article>`;
-  }).join('') || '<p class="sub" style="grid-column: 1 / -1; text-align: center; padding: 2rem;">Nenhuma entrega encontrada com esse termo.</p>';
+  }).join('') || '<p class="sub" style="grid-column: 1 / -1; text-align: center; padding: 2.5rem;">Nenhuma entrega encontrada para este filtro ou busca.</p>';
 }
 
 const buscaInput = $('#busca-entregas');
 if (buscaInput) {
-  buscaInput.addEventListener('input', e => renderEntregas(e.target.value));
+  buscaInput.addEventListener('input', () => renderEntregas());
 }
+
+document.querySelectorAll('.chip-entrega').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.chip-entrega').forEach(b => b.classList.remove('ativo'));
+    btn.classList.add('ativo');
+    filtroAnoEntrega = btn.dataset.filtro;
+    renderEntregas();
+  });
+});
 
 renderEntregas();

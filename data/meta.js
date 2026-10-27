@@ -1,10 +1,10 @@
 // Metadados de atualização do Trabalhômetro
 window.DADOS = window.DADOS || {};
 window.DADOS.meta = {
-  "atualizado_em": "26/10/2026 às 23:10",
+  "atualizado_em": "26/10/2026 às 23:36",
   "exemplo": false,
   "total_meses_gastos": 44,
   "total_viagens": 157,
   "total_paises": 28,
-  "total_entregas": 18
+  "total_entregas": 29
 };

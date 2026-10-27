@@ -369,6 +369,31 @@ h2::before {
 .lista strong { color: var(--pt-white); }
 
 /* Entregas */
+.filtros-entregas {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+.chip-entrega {
+  background: var(--bg-card);
+  color: var(--mut);
+  border: 1px solid var(--borda);
+  padding: 0.35rem 0.95rem;
+  border-radius: 99px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.chip-entrega.ativo, .chip-entrega:hover {
+  color: var(--pt-white);
+  background: var(--pt-red);
+  border-color: var(--pt-red-light);
+  box-shadow: 0 0 10px var(--pt-red-glow);
+}
+
 #busca-entregas {
   width: 100%; padding: .9rem 1.2rem; margin-bottom: 1.8rem; border-radius: 12px;
   background: var(--bg-card); border: 1px solid var(--borda); color: var(--txt); font: inherit;

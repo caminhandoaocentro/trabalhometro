@@ -3,6 +3,87 @@
 window.DADOS = window.DADOS || {};
 window.DADOS.entregas = [
   {
+    "data": "2026-05-15",
+    "titulo": "Entregas de Infraestrutura e Mobilidade Urbana da COP30",
+    "area": "Infraestrutura",
+    "uf": "PA",
+    "valor": 5000000000,
+    "descricao": "Conclusão das obras de macrodrenagem das bacias do Una e Estrada Nova, Parque Linear da Doca e novas vias de mobilidade urbana em Belém para a Conferência do Clima.",
+    "fonte_url": "https://www.gov.br/casacivil/pt-br/assuntos/cop30"
+  },
+  {
+    "data": "2026-03-20",
+    "titulo": "Ampliação Plena do Programa Pé-de-Meia (4 Milhões de Jovens)",
+    "area": "Educação",
+    "uf": "BR",
+    "valor": 9500000000,
+    "descricao": "Universalização da bolsa-poupança para todos os estudantes do ensino médio público pertencentes a famílias no CadÚnico, reduzindo a evasão escolar a patamares históricos.",
+    "fonte_url": "https://www.gov.br/mec/pt-br/pe-de-meia"
+  },
+  {
+    "data": "2026-01-01",
+    "titulo": "Política Permanente de Valorização do Salário Mínimo (3º Reajuste Real)",
+    "area": "Trabalho",
+    "uf": "BR",
+    "valor": null,
+    "descricao": "Aplicação contínua da fórmula de ganho real pelo INPC mais a taxa de crescimento do PIB, garantindo o maior poder de compra do piso nacional em décadas.",
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14663.htm"
+  },
+  {
+    "data": "2025-11-12",
+    "titulo": "Regulamentação da Reforma Tributária (Lei Complementar do IBS e CBS)",
+    "area": "Economia",
+    "uf": "BR",
+    "valor": null,
+    "descricao": "Aprovação e sanção das regras gerais do Imposto sobre Bens e Serviços (IBS) e Contribuição sobre Bens e Serviços (CBS), com trava da alíquota e cesta básica nacional 100% isenta.",
+    "fonte_url": "https://www.gov.br/fazenda/pt-br/assuntos/reforma-tributaria"
+  },
+  {
+    "data": "2025-09-08",
+    "titulo": "Entrega do Trecho Prioritário da Ferrovia Transnordestina",
+    "area": "Infraestrutura",
+    "uf": "CE/PI",
+    "valor": 4800000000,
+    "descricao": "Inauguração das obras do trecho ferroviário ligando o sertão do Piauí e Ceará ao Porto do Pecém no âmbito dos investimentos do Novo PAC.",
+    "fonte_url": "https://www.gov.br/casacivil/pt-br/novopac"
+  },
+  {
+    "data": "2025-07-24",
+    "titulo": "Plano Brasileiro de Inteligência Artificial (PBIA)",
+    "area": "Tecnologia",
+    "uf": "BR",
+    "valor": 23000000000,
+    "descricao": "Investimentos estruturantes em supercomputação soberana, capacitação de talentos e desenvolvimento de modelos de IA aplicados à saúde pública (SUS) e à preservação ambiental.",
+    "fonte_url": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2024/07/governo-apresenta-plano-brasileiro-de-inteligencia-artificial-com-investimento-de-r-23-bilhoes"
+  },
+  {
+    "data": "2025-06-18",
+    "titulo": "Lançamento do Plano Safra Recorde com Estímulo à Agroecologia",
+    "area": "Agricultura",
+    "uf": "BR",
+    "valor": 475000000000,
+    "descricao": "Maior volume de crédito rural da história, com juros subsidiados para pequenos e médios produtores familiares e bônus para práticas agrícolas sustentáveis e de baixo carbono.",
+    "fonte_url": "https://www.gov.br/mda/pt-br/noticias/plano-safra-da-agricultura-familiar"
+  },
+  {
+    "data": "2025-04-10",
+    "titulo": "Política Nacional de Cuidados e Mães Solo",
+    "area": "Social",
+    "uf": "BR",
+    "valor": null,
+    "descricao": "Criação do marco legal de apoio integral a cuidadores não remunerados, mães de crianças com deficiência e idosos, integrando a rede de assistência social do SUAS.",
+    "fonte_url": "https://www.gov.br/mulheres/pt-br/central-de-conteudo/noticias/2024/julho/governo-federal-envia-ao-congresso-projeto-da-politica-nacional-de-cuidados"
+  },
+  {
+    "data": "2025-02-05",
+    "titulo": "Programa Voa Brasil — Passagens Acessíveis a R$ 200",
+    "area": "Transportes",
+    "uf": "BR",
+    "valor": null,
+    "descricao": "Viabilização de passagens aéreas a preços populares de até R$ 200 por trecho para aposentados e pensionistas do INSS em parceria com as companhias aéreas nacionais.",
+    "fonte_url": "https://www.gov.br/portos-e-aeroportos/pt-br/assuntos/voa-brasil"
+  },
+  {
     "data": "2024-11-18",
     "titulo": "Cúpula do G20 no Brasil e Aliança Global contra a Fome",
     "area": "Internacional",
@@ -21,6 +102,15 @@ window.DADOS.entregas = [
     "fonte_url": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2024/10/governo-firma-acordo-historico-de-reparacao-do-desastre-de-mariana"
   },
   {
+    "data": "2024-10-08",
+    "titulo": "Lei do Combustível do Futuro (Lei 14.993)",
+    "area": "Energia",
+    "uf": "BR",
+    "valor": 260000000000,
+    "descricao": "Marco legal para atração de investimentos em combustíveis sustentáveis de aviação (SAF), diesel verde, biometano e ampliação dos percentuais de etanol e biodiesel.",
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14993.htm"
+  },
+  {
     "data": "2024-08-18",
     "titulo": "Realização do Concurso Público Nacional Unificado (CPNU)",
     "area": "Gestão",
@@ -28,6 +118,15 @@ window.DADOS.entregas = [
     "valor": null,
     "descricao": "Maior concurso público da história do Brasil com 6,6 mil vagas federais em 228 cidades simultaneamente, descentralizando o acesso ao serviço público.",
     "fonte_url": "https://www.gov.br/gestao/pt-br/concursonacional"
+  },
+  {
+    "data": "2024-08-02",
+    "titulo": "Marco Legal do Hidrogênio de Baixa Emissão de Carbono (Lei 14.948)",
+    "area": "Energia",
+    "uf": "BR",
+    "valor": null,
+    "descricao": "Criação do marco regulatório da indústria do hidrogênio sustentável no Brasil e do Sistema Nacional de Certificação do Hidrogênio.",
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14948.htm"
   },
   {
     "data": "2024-07-10",
@@ -44,7 +143,7 @@ window.DADOS.entregas = [
     "area": "Economia",
     "uf": "BR",
     "valor": null,
-    "descricao": "Reajuste da faixa de isenção do IRPF beneficiando mais de 15 milhões de trabalhadores e aposentados.",
+    "descricao": "Reajuste da faixa de isenção do IRPF beneficiando mais de 15 milhões de trabalhadores e aposentados que ganham até 2 salários mínimos.",
     "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14848.htm"
   },
   {
@@ -80,7 +179,7 @@ window.DADOS.entregas = [
     "area": "Educação",
     "uf": "BR",
     "valor": 7100000000,
-    "descricao": "Poupança e incentivo financeiro mensal para permanência e conclusão de quase 4 milhões de estudantes do ensino médio público.",
+    "descricao": "Poupança e incentivo financeiro mensal para permanência e conclusão de estudantes do ensino médio público.",
     "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14818.htm"
   },
   {
@@ -107,7 +206,7 @@ window.DADOS.entregas = [
     "area": "Social",
     "uf": "BR",
     "valor": null,
-    "descricao": "Conjunto de 80 ações interministeriais integrando alimentação escolar, compras públicas da agricultura familiar e restaurantes populares.",
+    "descricao": "Conjunto de 80 ações integrando alimentação escolar, compras públicas da agricultura familiar e restaurantes populares.",
     "fonte_url": "https://www.gov.br/mds/pt-br/acoes-e-programas/brasil-sem-fome"
   },
   {
@@ -152,7 +251,7 @@ window.DADOS.entregas = [
     "area": "Social",
     "uf": "BR",
     "valor": 600.0,
-    "descricao": "Benefício mínimo de R$ 600 com adicional de R$ 150 por criança até 6 anos e R$ 50 para gestantes e jovens de 7 a 18 anos, condicionado à vacinação e frequência escolar.",
+    "descricao": "Benefício mínimo de R$ 600 com adicional de R$ 150 por criança até 6 anos e R$ 50 para gestantes e jovens, condicionado à vacinação e frequência escolar.",
     "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
   },
   {

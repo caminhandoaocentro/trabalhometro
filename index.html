@@ -73,9 +73,18 @@
     </section>
 
     <section id="entregas" class="bloco">
-      <h2>Entregas</h2>
-      <p class="sub">Obras, programas e atos entregues.</p>
-      <input id="busca-entregas" type="search" placeholder="Buscar por título, área ou UF…">
+      <h2>Entregas e Ações</h2>
+      <p class="sub">Obras, programas sociais, reformas e leis sancionadas pela Presidência.</p>
+      
+      <div class="filtros-entregas">
+        <button class="chip-entrega ativo" data-filtro="todos">Todos os anos</button>
+        <button class="chip-entrega" data-filtro="2026">2026</button>
+        <button class="chip-entrega" data-filtro="2025">2025</button>
+        <button class="chip-entrega" data-filtro="2024">2024</button>
+        <button class="chip-entrega" data-filtro="2023">2023</button>
+      </div>
+
+      <input id="busca-entregas" type="search" placeholder="🔍 Buscar por título, área (Educação, Social, Economia...), UF ou palavra-chave...">
       <div id="grid-entregas" class="grid"></div>
     </section>
 
