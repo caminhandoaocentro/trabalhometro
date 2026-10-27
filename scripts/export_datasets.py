@@ -88,15 +88,18 @@ def exportar_todos():
         # Salva CSV
         with open(EXPORT_DIR / "entregas.csv", "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-            writer.writerow(["ano", "data", "titulo", "tipo", "uf", "investimento", "descricao", "fonte_url"])
+            writer.writerow(["ano", "data", "titulo", "area", "uf", "investimento", "descricao", "fonte_url"])
             for e in entregas:
+                dt = e.get("data", "")
+                ano = e.get("ano") or (dt.split("-")[0] if "-" in dt else "")
+                area = e.get("area") or e.get("tipo", "")
                 writer.writerow([
-                    e.get("ano", ""),
-                    e.get("data", ""),
+                    ano,
+                    dt,
                     e.get("titulo", ""),
-                    e.get("tipo", ""),
+                    area,
                     e.get("uf", ""),
-                    e.get("investimento", ""),
+                    e.get("valor") or e.get("investimento", ""),
                     e.get("descricao", ""),
                     e.get("fonte_url", "")
                 ])

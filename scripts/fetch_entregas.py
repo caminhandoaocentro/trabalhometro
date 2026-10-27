@@ -77,6 +77,15 @@ ENTREGAS_OFICIAIS = [
         "fonte_url": "https://www.gov.br/mda/pt-br/noticias/plano-safra-da-agricultura-familiar"
     },
     {
+        "data": "2025-06-11",
+        "titulo": "Aumento das Alíquotas do IOF (Decreto 12.499/2025)",
+        "area": "Economia",
+        "uf": "BR",
+        "valor": None,
+        "descricao": "Edição do Decreto Presidencial nº 12.499 aumentando as alíquotas do IOF sobre operações de crédito (PJ e PF), câmbio e remessas internacionais, além de alíquota de 5% sobre seguros de vida/VGBL para cumprimento das metas fiscais. O decreto foi barrado pelo Congresso Nacional (PDL 176/2025), mas o governo recorreu ao STF, onde o ministro Alexandre de Moraes concedeu liminar restabelecendo a maior parte do aumento.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12499.htm"
+    },
+    {
         "data": "2025-04-10",
         "titulo": "Política Nacional de Cuidados e Mães Solo",
         "area": "Social",
