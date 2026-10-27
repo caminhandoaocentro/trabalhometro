@@ -264,7 +264,43 @@ if (gastos.length > 0) {
   renderGrafico('todos');
 }
 
-// 3. Viagens e Mapa
+// 3. Compras Diretas & Bens Patrimoniais (Dispensas de Licitação / Mobília)
+const comprasDiretas = D.compras_diretas || [];
+const listaComprasEl = $('#lista-compras-diretas');
+if (listaComprasEl && comprasDiretas.length > 0) {
+  listaComprasEl.innerHTML = comprasDiretas.map(c => `
+    <article class="compra-direta-card">
+      <div>
+        <span class="tag">${esc(c.modalidade)}</span>
+        <h5>${esc(c.local)} — ${esc(c.processo)}</h5>
+        <div class="valor-badge">${brl(c.valor_total)}</div>
+        <p style="font-size:0.86rem; color:var(--txt); margin-bottom:0.6rem;">${esc(c.objeto)}</p>
+        
+        <strong style="font-size:0.75rem; color:var(--mut); text-transform:uppercase;">Itens de Destaque:</strong>
+        <ul class="compra-itens-lista">
+          ${(c.itens || []).map(it => `
+            <li>
+              <span>${esc(it.item)}</span>
+              <strong>${brl(it.valor)}</strong>
+            </li>
+          `).join('')}
+        </ul>
+      </div>
+
+      <div>
+        <div class="compra-parecer-tcu">
+          <strong>⚖️ Posição do TCU e Controle:</strong> ${esc(c.posicao_orgaos_controle)}
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:0.6rem;">
+          <small style="color:var(--mut);">📅 ${esc(c.data)}</small>
+          <a href="${esc(c.fonte_url)}" target="_blank" rel="noopener" style="font-size:0.8rem; font-weight:600;">Ver publicação no DOU →</a>
+        </div>
+      </div>
+    </article>
+  `).join('');
+}
+
+// 4. Viagens e Mapa
 let mapa;
 try {
   mapa = L.map('mapa', {

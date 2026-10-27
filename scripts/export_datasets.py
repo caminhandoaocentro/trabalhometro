@@ -128,6 +128,28 @@ def exportar_todos():
         (EXPORT_DIR / "meta.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8")
         print(f"[✓] Metadados exportados -> data/export/meta.json")
 
+    # 7. Compras Diretas e Bens Patrimoniais (Dispensas de Licitação)
+    compras_js = DATA_DIR / "compras_diretas.js"
+    if compras_js.exists():
+        compras = extrair_json_de_js(compras_js)
+        (EXPORT_DIR / "compras_diretas.json").write_text(json.dumps(compras, indent=2, ensure_ascii=False), encoding="utf-8")
+        with open(EXPORT_DIR / "compras_diretas.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["id", "data", "modalidade", "processo", "local", "valor_total", "objeto", "posicao_tcu", "fonte_url"])
+            for c in compras:
+                writer.writerow([
+                    c.get("id", ""),
+                    c.get("data", ""),
+                    c.get("modalidade", ""),
+                    c.get("processo", ""),
+                    c.get("local", ""),
+                    c.get("valor_total", 0),
+                    c.get("objeto", ""),
+                    c.get("posicao_orgaos_controle", ""),
+                    c.get("fonte_url", "")
+                ])
+        print(f"[✓] Compras Diretas exportadas: {len(compras)} processos -> data/export/compras_diretas.json & compras_diretas.csv")
+
     print(f"\n[✓] Exportação completa com sucesso em {EXPORT_DIR}")
 
 

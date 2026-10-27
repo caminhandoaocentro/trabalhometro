@@ -38,14 +38,16 @@ trabalhometro/
 ├── data/
 │   ├── meta.js           # Metadados de atualização e contadores
 │   ├── gastos.js         # Gastos reais do Cartão Corporativo (CGU)
+│   ├── compras_diretas.js # Compras diretas, mobília e dispensas (DOU / TCU)
 │   ├── viagens.js        # Deslocamentos oficiais e coordenadas
 │   ├── novopac.js        # Indicadores oficiais de transparência do Novo PAC
 │   ├── entregas.js       # Entregas, leis e programas governamentais
 │   ├── avaliacao.js      # Matriz desenvolvimentista e projetos estruturantes
 │   ├── export/           # 📦 Datasets prontos para uso (CSV e JSON limpos)
 │   │   ├── gastos.csv / .json       # Série histórica mensal do CPGF
+│   │   ├── compras_diretas.csv / .json # Dispensas de licitação e mobília
 │   │   ├── viagens.csv / .json      # Destinos, coordenadas e motivos
-│   │   ├── entregas.csv / .json     # 29 leis e atos com links oficiais
+│   │   ├── entregas.csv / .json     # 32 leis e atos com links oficiais
 │   │   ├── novopac.json / fontes.csv # Financiamento e metas do Novo PAC
 │   │   └── avaliacao.json           # Pilares e projetos de referência
 │   └── raw/              # 🗄️ Data Lake Bruto da CGU (linha por linha)
@@ -55,6 +57,7 @@ trabalhometro/
 ├── scripts/
 │   ├── config.py         # Configurações gerais, rotas e coordenadas
 │   ├── fetch_cartao.py   # Coleta e consolidação de gastos no Portal da Transparência
+│   ├── fetch_compras_diretas.py # Compras diretas de bens e dispensas de licitação
 │   ├── fetch_viagens_api.py # Consulta direta à API oficial da CGU (viagens)
 │   ├── fetch_viagens_oficiais.py # Consolidação de viagens internacionais e de Estado
 │   ├── fetch_novopac.py  # Captura de dados de transparência do Novo PAC (Casa Civil)
@@ -89,6 +92,7 @@ print(df_viagens.describe())
 
 ### Arquivos disponíveis para download direto:
 * 💳 **Gastos do CPGF:** [`data/export/gastos.csv`](data/export/gastos.csv) · [`gastos.json`](data/export/gastos.json)
+* 🪑 **Compras Diretas & Mobília:** [`data/export/compras_diretas.csv`](data/export/compras_diretas.csv) · [`compras_diretas.json`](data/export/compras_diretas.json)
 * ✈️ **Viagens Oficiais:** [`data/export/viagens.csv`](data/export/viagens.csv) · [`viagens.json`](data/export/viagens.json)
 * 🏛️ **Entregas e Reformas:** [`data/export/entregas.csv`](data/export/entregas.csv) · [`entregas.json`](data/export/entregas.json)
 * 🏗️ **Novo PAC:** [`data/export/novopac.json`](data/export/novopac.json) · [`novopac_fontes.csv`](data/export/novopac_fontes.csv)

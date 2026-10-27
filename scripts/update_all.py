@@ -11,6 +11,7 @@ import fetch_viagens_oficiais
 import fetch_viagens_api
 import fetch_novopac
 import fetch_entregas
+import fetch_compras_diretas
 import export_datasets
 
 
@@ -57,8 +58,12 @@ def atualizar_tudo():
     pac_dados = fetch_novopac.extrair_dados_novopac()
 
     # 4. Entregas e Reformas
-    print("\n[4/4] Atualizando Entregas Oficiais...")
+    print("\n[4/5] Atualizando Entregas Oficiais...")
     entregas = fetch_entregas.consolidar_entregas()
+
+    # 5. Compras Diretas e Bens Patrimoniais
+    print("\n[5/6] Atualizando Compras Diretas e Bens Patrimoniais...")
+    compras_diretas = fetch_compras_diretas.consolidar_compras_diretas()
 
     # 4. Metadados
     hoje_fmt = datetime.now().strftime("%d/%m/%Y às %H:%M")

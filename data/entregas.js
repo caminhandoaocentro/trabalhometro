@@ -138,6 +138,15 @@ window.DADOS.entregas = [
     "fonte_url": "https://www.gov.br/saude/pt-br/composicao/sectics/farmacia-popular"
   },
   {
+    "data": "2024-06-27",
+    "titulo": "Taxa das Blusinhas e Programa Mover (Lei 14.902)",
+    "area": "Economia",
+    "uf": "BR",
+    "valor": null,
+    "descricao": "Sanção presidencial da lei que instituiu o Programa Mobilidade Verde e Inovação (Mover) e aprovou a taxação federal de 20% de Imposto de Importação sobre compras internacionais de até US$ 50 (art. 48), além do ICMS estadual.",
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14902.htm"
+  },
+  {
     "data": "2024-05-01",
     "titulo": "Isenção do Imposto de Renda até 2 Salários Mínimos (Lei 14.848)",
     "area": "Economia",
@@ -190,6 +199,15 @@ window.DADOS.entregas = [
     "valor": null,
     "descricao": "Aprovação histórica da unificação de 5 impostos (PIS, Cofins, IPI, ICMS, ISS) no IVA Dual (CBS e IBS), com cashback social e cesta básica isenta.",
     "fonte_url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+  },
+  {
+    "data": "2023-12-12",
+    "titulo": "Tributação de Fundos Exclusivos e Offshores (Lei 14.754)",
+    "area": "Economia",
+    "uf": "BR",
+    "valor": 30000000000,
+    "descricao": "Sanção da lei que instituiu a cobrança periódica de IRPF ('come-cotas') sobre fundos fechados de investimento de alta renda e a tributação de aplicações financeiras e empresas em offshores no exterior.",
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
   },
   {
     "data": "2023-10-03",
@@ -253,6 +271,15 @@ window.DADOS.entregas = [
     "valor": 600.0,
     "descricao": "Benefício mínimo de R$ 600 com adicional de R$ 150 por criança até 6 anos e R$ 50 para gestantes e jovens, condicionado à vacinação e frequência escolar.",
     "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+  },
+  {
+    "data": "2023-02-28",
+    "titulo": "Reoneração Fiscal e Medidas Tributárias (MP 1.163 e Decretos de IOF)",
+    "area": "Economia",
+    "uf": "BR",
+    "valor": null,
+    "descricao": "Medidas do Executivo para fechamento da meta fiscal, incluindo reoneração gradual de combustíveis (PIS/Cofins), regulamentação de alíquotas de IOF sobre operações financeiras e revisão de benefícios setoriais.",
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/mpv/mpv1163.htm"
   },
   {
     "data": "2023-01-11",

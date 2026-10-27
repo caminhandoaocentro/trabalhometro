@@ -57,16 +57,18 @@
       "id": "gastos_privilegios",
       "icone": "✂️",
       "titulo": "Rigor nos Gastos Públicos & Fim de Privilégios",
-      "regra": "Transparência total dos gastos do Executivo, combate a privilégios corporativos e moderação rígida em despesas discricionárias de gabinete.",
+      "regra": "Transparência total dos gastos do Executivo, combate a privilégios corporativos, moderação rígida em despesas de residências oficiais e justiça distributiva na carga tributária sobre o trabalhador.",
       "projetos_chave": [
         "Abertura integral das faturas do CPGF no Portal da Transparência sem sigilo de 100 anos",
         "Média mensal de ~R$ 1,9 milhão no Cartão Corporativo da Presidência da República",
-        "Proteção legal da LAI (art. 24) que classifica ~98% dos gastos de segurança como reservados durante o mandato"
+        "Móveis da Suíte do Alvorada — R$ 196,7 mil em dispensa de licitação (sofá reclinável e cama articulada auditados pelo TCU)",
+        "Taxa das Blusinhas (Lei 14.902/2024) — Imposto de 20% em remessas até US$ 50 impactando o consumo popular",
+        "Proteção legal da LAI (art. 24) que classifica ~98% dos gastos de cartão como segurança de Estado"
       ],
-      "analise": "A abertura dos dados mensais de cartão foi um avanço democrático fundamental. No entanto, o volume médio mensal permanece em patamar elevado e o alto índice de despesas sob a rubrica de segurança exige vigilância cidadã constante.",
+      "analise": "A abertura das faturas do cartão corporativo foi um avanço democrático inegável. Por outro lado, gastos expressivos com mobiliário palaciano por dispensa de licitação e a tributação de compras internacionais populares (taxa das blusinhas) geram atrito legítimo com o princípio da moderação nos gastos de cúpula e proteção do poder de compra do cidadão comum.",
       "status": "parcial",
       "status_label": "Alerta Crítico / Cobrança",
-      "nota": 6.5
+      "nota": 6.2
     },
     {
       "id": "seguranca_vigilancia",
