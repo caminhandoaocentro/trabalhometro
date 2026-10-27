@@ -1,6 +1,6 @@
 """
 Orquestrador central de atualização de todos os dados do Trabalhômetro.
-Executa a captura de cartões, viagens, entregas e atualiza data/meta.js.
+Executa a captura de cartões, viagens (API CGU + Agenda oficial) e entregas.
 """
 from datetime import datetime
 import json
@@ -8,21 +8,47 @@ from pathlib import Path
 from config import DATA_DIR
 import fetch_cartao
 import fetch_viagens_oficiais
+import fetch_viagens_api
 import fetch_entregas
 
 
 def atualizar_tudo():
-    print("=" * 60)
-    print("⭐️ TRABALHÔMETRO — Atualização de Dados Oficiais")
-    print("=" * 60)
+    print("=" * 65)
+    print("⭐️ TRABALHÔMETRO — Atualização com API Oficial do Portal da Transparência")
+    print("=" * 65)
 
-    # 1. Gastos (Cartão Corporativo)
+    # 1. Gastos (Cartão Corporativo CPGF)
     print("\n[1/3] Atualizando Gastos do Cartão Corporativo...")
     gastos = fetch_cartao.atualizar_gastos()
 
-    # 2. Viagens
+    # 2. Viagens (API Oficial da CGU + Viagens de Estado/Internacionais)
     print("\n[2/3] Atualizando Viagens Oficiais...")
-    viagens = fetch_viagens_oficiais.consolidar_viagens()
+    viagens_api = fetch_viagens_api.processar_viagens_api(limite_meses=12)
+    viagens_estado = fetch_viagens_oficiais.VIAGENS_OFICIAIS
+
+    # Mescla sem duplicidade
+    todas_viagens = []
+    vistos = set()
+
+    for v in viagens_api + viagens_estado:
+        chave = (v.get("data"), v.get("local"))
+        if chave in vistos:
+            continue
+        vistos.add(chave)
+        todas_viagens.append(v)
+
+    todas_viagens.sort(key=lambda x: x.get("data", ""), reverse=True)
+
+    output_viagens = DATA_DIR / "viagens.js"
+    conteudo_viagens = (
+        "// Viagens oficiais da Presidência da República\n"
+        "// Fontes: API do Portal da Transparência (CGU) e Agenda Oficial do Planalto\n"
+        "window.DADOS = window.DADOS || {};\n"
+        f"window.DADOS.viagens = {json.dumps(todas_viagens, indent=2, ensure_ascii=False)};\n"
+    )
+    with open(output_viagens, "w", encoding="utf-8") as f:
+        f.write(conteudo_viagens)
+    print(f"[✓] {len(todas_viagens)} viagens oficiais consolidadas com sucesso em {output_viagens}!")
 
     # 3. Entregas
     print("\n[3/3] Atualizando Entregas Oficiais...")
@@ -30,11 +56,13 @@ def atualizar_tudo():
 
     # 4. Metadados
     hoje_fmt = datetime.now().strftime("%d/%m/%Y às %H:%M")
+    paises_visitados = len(set(v.get("pais") for v in todas_viagens if v.get("tipo") == "internacional"))
     meta = {
         "atualizado_em": hoje_fmt,
         "exemplo": False,
         "total_meses_gastos": len(gastos),
-        "total_viagens": len(viagens),
+        "total_viagens": len(todas_viagens),
+        "total_paises": paises_visitados,
         "total_entregas": len(entregas)
     }
 
@@ -44,12 +72,14 @@ def atualizar_tudo():
         "window.DADOS = window.DADOS || {};\n"
         f"window.DADOS.meta = {json.dumps(meta, indent=2, ensure_ascii=False)};\n"
     )
-
     with open(meta_file, "w", encoding="utf-8") as f:
         f.write(conteudo_meta)
 
-    print(f"\n[✓] Sucesso! Metadados atualizados em {meta_file} ({hoje_fmt})")
-    print("=" * 60)
+    print(f"\n[✓] Sucesso! Metadados consolidados em {meta_file} ({hoje_fmt})")
+    print(f"    - Gastos: {len(gastos)} meses oficiais")
+    print(f"    - Viagens: {len(todas_viagens)} destinos catalogados ({paises_visitados} países)")
+    print(f"    - Entregas: {len(entregas)} atos e obras oficiais")
+    print("=" * 65)
 
 
 if __name__ == "__main__":
