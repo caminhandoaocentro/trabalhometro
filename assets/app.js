@@ -47,10 +47,10 @@ $('#st-paises').textContent = new Set(viagens.filter(v => v.tipo === 'internacio
 $('#st-entregas').textContent = entregas.length;
 $('#st-data').textContent = meta.atualizado_em || '—';
 
-// 2. Gráfico de Gastos (Cartão Corporativo)
+// 2. Gráfico de Gastos (Cartão Corporativo) com Chart.js
 const destaqueBoxEl = $('#destaque-gastos-box');
-const containerScroll = $('#barras-scroll-container');
-const graficoEl = $('#grafico-gastos');
+const canvasChartEl = $('#grafico-chart');
+let chartGastosInstancia = null;
 
 if (gastos.length > 0) {
   // Último mês consolidado
@@ -70,7 +70,7 @@ if (gastos.length > 0) {
       <div class="destaque-mini">
         <div class="rotulo">Média Mensal Oficial</div>
         <div class="valor-destaque">${brl(mediaMensal)}</div>
-        <div class="detalhe">Base de 44 meses catalogados</div>
+        <div class="detalhe">Base de ${gastos.length} meses catalogados</div>
       </div>
       <div class="destaque-mini">
         <div class="rotulo">Total Acumulado (Mandato)</div>
@@ -86,32 +86,117 @@ if (gastos.length > 0) {
       return (g.mes || '').startsWith(filtroAno);
     });
 
-    if (!graficoEl) return;
-    const max = Math.max(...listaFiltrada.map(g => Number(g.valor) || 0), 1);
+    if (!canvasChartEl || typeof Chart === 'undefined') return;
 
-    graficoEl.style.minWidth = filtroAno === 'todos' ? '920px' : '100%';
-    graficoEl.innerHTML = listaFiltrada.map((g, i) => {
-      const valor = Number(g.valor) || 0;
-      const [ano, mes] = (g.mes || '----').split('-');
-      const rotulo = `${mes}/${ano ? ano.slice(2) : ''}`;
-      const alturaPct = Math.max((valor / max) * 100, 5);
-      const transTxt = g.transacoes ? `<br><small style="color:var(--mut);font-weight:400">${g.transacoes} transações</small>` : '';
+    const ctx = canvasChartEl.getContext('2d');
+    if (!ctx) return;
 
-      return `
-        <div class="barra" style="height:${alturaPct}%;animation-delay:${Math.min(i * 12, 400)}ms" data-mes="${esc(rotulo)}">
-          <span class="tip">
-            <strong>${esc(rotulo)}:</strong> ${brl(valor)}
-            ${transTxt}
-          </span>
-        </div>`;
-    }).join('');
+    // Gradiente vermelho oficial do PT
+    const gradiente = ctx.createLinearGradient(0, 0, 0, 360);
+    gradiente.addColorStop(0, '#FF3843');
+    gradiente.addColorStop(0.7, '#D71920');
+    gradiente.addColorStop(1, '#7E0B10');
 
-    // Rola automaticamente para os meses mais recentes à direita
-    if (containerScroll) {
-      setTimeout(() => {
-        containerScroll.scrollTo({ left: containerScroll.scrollWidth, behavior: 'smooth' });
-      }, 100);
+    const labels = listaFiltrada.map(g => {
+      const [ano, mes] = (g.mes || '').split('-');
+      const mNome = mesesNomes[parseInt(mes, 10) - 1] || mes;
+      return filtroAno === 'todos' ? `${mNome}/${ano.slice(2)}` : mNome;
+    });
+
+    const valores = listaFiltrada.map(g => Number(g.valor) || 0);
+    const transacoes = listaFiltrada.map(g => g.transacoes || 0);
+
+    if (chartGastosInstancia) {
+      chartGastosInstancia.destroy();
     }
+
+    chartGastosInstancia = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Gasto Mensal',
+          data: valores,
+          backgroundColor: gradiente,
+          hoverBackgroundColor: '#ff5c65',
+          borderRadius: 6,
+          borderSkipped: false,
+          maxBarThickness: 34
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: {
+          duration: 600,
+          easing: 'easeOutQuart'
+        },
+        interaction: {
+          mode: 'index',
+          intersect: false
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            backgroundColor: 'rgba(20, 10, 12, 0.95)',
+            borderColor: '#D71920',
+            borderWidth: 1,
+            titleColor: '#ffffff',
+            titleFont: { size: 14, weight: 'bold', family: 'Outfit, sans-serif' },
+            bodyColor: '#f7f7f8',
+            bodyFont: { size: 13, family: 'Inter, sans-serif' },
+            padding: 12,
+            cornerRadius: 10,
+            displayColors: false,
+            callbacks: {
+              title: (items) => {
+                const idx = items[0].dataIndex;
+                const item = listaFiltrada[idx];
+                return `Mês: ${item.mes}`;
+              },
+              label: (item) => {
+                const idx = item.dataIndex;
+                const v = valores[idx];
+                const t = transacoes[idx];
+                return [
+                  `💰 Valor: ${brl(v)}`,
+                  t ? `📝 Transações: ${t.toLocaleString('pt-BR')}` : ''
+                ].filter(Boolean);
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: {
+              display: false,
+              drawBorder: false
+            },
+            ticks: {
+              color: '#b8a6a8',
+              font: { size: 11, family: 'Inter, sans-serif' },
+              maxRotation: 45,
+              minRotation: 0,
+              autoSkip: true,
+              maxTicksLimit: filtroAno === 'todos' ? 14 : 12
+            }
+          },
+          y: {
+            grid: {
+              color: 'rgba(215, 25, 32, 0.12)',
+              drawBorder: false
+            },
+            ticks: {
+              color: '#b8a6a8',
+              font: { size: 11, family: 'Inter, sans-serif' },
+              callback: (value) => brlResumido(value)
+            }
+          }
+        }
+      }
+    });
   }
 
   // Eventos dos filtros por ano

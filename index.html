@@ -45,18 +45,19 @@
 
       <div class="grafico-controles">
         <div class="filtros-anos">
-          <span style="font-size:0.85rem;color:var(--mut);margin-right:0.3rem">Filtrar ano:</span>
+          <span style="font-size:0.85rem;color:var(--mut);margin-right:0.3rem">Filtrar por ano:</span>
           <button class="chip-ano ativo" data-ano="todos">Todos</button>
           <button class="chip-ano" data-ano="2026">2026</button>
           <button class="chip-ano" data-ano="2025">2025</button>
           <button class="chip-ano" data-ano="2024">2024</button>
           <button class="chip-ano" data-ano="2023">2023</button>
         </div>
-        <span class="dica-scroll">⇄ Arraste para navegar</span>
       </div>
 
-      <div class="barras-wrapper" id="barras-scroll-container">
-        <div id="grafico-gastos" class="barras"></div>
+      <div class="grafico-card-box">
+        <div class="grafico-canvas-wrapper">
+          <canvas id="grafico-chart"></canvas>
+        </div>
       </div>
       <p class="nota-defasagem">ℹ️ <strong>Transparência oficial:</strong> Os dados de faturas do cartão corporativo são disponibilizados pela CGU após a liquidação bancária pelo Banco do Brasil, com defasagem técnica natural de 30 a 60 dias.</p>
     </section>
@@ -143,6 +144,7 @@
   <script src="data/viagens.js"></script>
   <script src="data/novopac.js"></script>
   <script src="data/entregas.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="assets/app.js"></script>
 </body>
