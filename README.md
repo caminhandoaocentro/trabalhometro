@@ -2,7 +2,7 @@
 
 Painel independente e 100% estático que reúne **dados públicos oficiais** sobre os atos, entregas, gastos e viagens da Presidência da República (3º Mandato).
 
-🌐 **Site no ar:** [https://jeferson-guedes.github.io/trabalhometro/](https://jeferson-guedes.github.io/trabalhometro/)
+🌐 **Site no ar:** [https://caminhandoaocentro.github.io/trabalhometro/](https://caminhandoaocentro.github.io/trabalhometro/)
 
 Cada indicador e dado exibido possui link direto para sua respectiva fonte oficial, sem qualquer juízo editorial — apenas transparência e números.
 

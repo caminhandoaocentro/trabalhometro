@@ -20,7 +20,7 @@ from config import (
 VIAGENS_CACHE_DIR = CACHE_DIR / "viagens"
 VIAGENS_CACHE_DIR.mkdir(exist_ok=True)
 
-USER_AGENT = "Trabalhometro/1.0 (+https://jeferson-guedes.github.io/trabalhometro/)"
+USER_AGENT = "Trabalhometro/1.0 (+https://caminhandoaocentro.github.io/trabalhometro/)"
 URL_FONTE_VIAGENS = "https://portaldatransparencia.gov.br/viagens"
 
 
