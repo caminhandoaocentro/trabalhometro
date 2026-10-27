@@ -1,0 +1,1127 @@
+[
+  {
+    "id": 212748700,
+    "viagem": {
+      "motivo": "Realizar o acompanhamento das ações desenvolvidas no âmbito da UFABC, a ser realizado em São Paulo - SP.",
+      "pcdp": "0000000000021510430",
+      "ano": 2025,
+      "numPcdp": "001347/25",
+      "justificativaUrgente": "solicitado nesta data",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.317.618-**",
+      "nis": "",
+      "nome": "LAURA MARTIN DA CRUZ"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "CCX-0113",
+      "descricao": "CCX-0113"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-03",
+    "dataFimAfastamento": "2025-11-04",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 809.1,
+    "valorTotalPassagem": 692.75,
+    "valorTotalViagem": 1501.85,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212764708,
+    "viagem": {
+      "motivo": "No Rio de Janeiro participar da Cúpula Mundial de Prefeitos: Este é o maior encontro global de cidades comprometidas com a ação climática e ocorrerá de 3 a 5 de novembro, com o objetivo de discutir soluções urbanas para a crise climática e fortalecer a colaboração entre as cidades para um futuro mais sustentável. Em São Paulo: Participar do Principles for Responsible Investment, entre os dias 4 e 6 de novembro de 2025. A viagem da CEO da COP30 a Belém, no período de 5 a 24 de novembro, tem como objetivo acompanhar e coordenar as atividades preparatórias para a Conferência das Nações Unidas sobre Mudanças Climáticas (COP30), a ser realizada em 2025.",
+      "pcdp": "0000000000021514978",
+      "ano": 2025,
+      "numPcdp": "001373/25-1C",
+      "justificativaUrgente": "A urgência ocorreu porque a Diretora estava finalizando o fechamento das agendas oficiais, o que impossibilitou a definição e o registro da viagem dentro do prazo estabelecido. Assim, a solicitação foi formalizada tão logo as datas puderam ser confirmadas.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.742.118-**",
+      "nis": "",
+      "nome": "ANA AMELIA CAMPOS TONI"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "CCX-0117",
+      "descricao": "CCX-0117"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110862",
+      "nome": "SECRETARIA DA PRESIDENCIA DA COP-30",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-02",
+    "dataFimAfastamento": "2025-11-24",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 7715.75,
+    "valorTotalPassagem": 15790.88,
+    "valorTotalViagem": 23506.63,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212788583,
+    "viagem": {
+      "motivo": "Servidor irá compor Escalão Avançado para viagem internacional do Sr. Presidente da República para a cidade de Santa Marta - Colômbia (00185.006022/2025-29).",
+      "pcdp": "0000000000021574473",
+      "ano": 2025,
+      "numPcdp": "001431/25",
+      "justificativaUrgente": "Sem informação",
+      "urgenciaViagem": "Não"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.461.601-**",
+      "nis": "",
+      "nome": "ALEX JUNIO ARAUJO DE FRANCA"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "CCX-0205",
+      "descricao": "CCX-0205"
+    },
+    "tipoViagem": "Internacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-06",
+    "dataFimAfastamento": "2025-11-09",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 0.0,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 102.33,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212794908,
+    "viagem": {
+      "motivo": "Coordena a Agenda de Ação, um dos pilares em que se espera grande visibilidade e uma cobertura positiva durante a COP30. A agenda de ação deverá realizar diversos eventos, gerenciar os Espaços Temáticos, assim é fundamental a participação robusta do time envolvido na coordenação das atividades. A Coordenadora também deverá fazer representação institucional em eventos afetos e que não seja possível a participação do Presidente e da CEO, bem como atuará na inserção de elementos da Agenda de Ação no processo negociador.",
+      "pcdp": "0000000000021520351",
+      "ano": 2025,
+      "numPcdp": "001385/25",
+      "justificativaUrgente": "A viagem da equipe foi realizada com mais de 15 dias de antecedência, conforme previsto nas orientações do Sistema de Concessão de Diárias e Passagens (SCDP). Portanto, a presente demanda não se caracteriza como uma solicitação de viagem urgente, estando integralmente dentro dos prazos estabelecidos pela legislação vigente. Contudo, as tratativas relativas à viagem estavam pendentes de confirmação quanto à possibilidade de acomodação das delegações pelo Governo Federal, o que impactou o andamento do processo. Considerando a imprescindibilidade da participação das servidoras na referida Conferência e o rápido esgotamento das passagens aéreas no trecho Belém-Brasília, solicita-se urgência na tramitação e aquisição dos bilhetes, a fim de garantir a presença da equipe no evento e evitar prejuízos institucionais.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.672.138-**",
+      "nis": "",
+      "nome": "BRUNA LUISA CERQUEIRA PIA DE ANDRADE"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "CCX-0113",
+      "descricao": "CCX-0113"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110862",
+      "nome": "SECRETARIA DA PRESIDENCIA DA COP-30",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-05",
+    "dataFimAfastamento": "2025-11-22",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 4327.1,
+    "valorTotalPassagem": 6410.55,
+    "valorTotalViagem": 10737.65,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212808412,
+    "viagem": {
+      "motivo": "DESLOCAMENTO PARA SÃO PAULO - SP, CONFORME SOLICITAÇÃO Nº 1282/25 DA COORDENAÇÃO DE VIAGEM.",
+      "pcdp": "0000000000021639005",
+      "ano": 2025,
+      "numPcdp": "001565/25",
+      "justificativaUrgente": "SOLICITADA SOMENTE NESTA DATA PELA COORDENAÇÃO DA VIAGEM.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.581.808-**",
+      "nis": "",
+      "nome": "PEDRO BATISTA LAMOSO JUNIOR"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "CCX-0217",
+      "descricao": "CCX-0217"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-20",
+    "dataFimAfastamento": "2025-11-20",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 400.0,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 400.0,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212864870,
+    "viagem": {
+      "motivo": "DESLOCAMENTO PARA BELEM/PA- CONFORME SOLICITAÇÃO 1161/25, DA COORDENAÇÃO DA VIAGEM.",
+      "pcdp": "0000000000021574476",
+      "ano": 2025,
+      "numPcdp": "001474/25",
+      "justificativaUrgente": "PERIDO DEFINIDO PELA COORDENAÇÃO DE VIAGEM.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.993.631-**",
+      "nis": "",
+      "nome": "FERNANDO LUIS LEMOS IGREJA"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000030016",
+      "descricao": "MINISTRO DE PRIMEIRA CLASSE"
+    },
+    "funcao": {
+      "codigoSIAPE": "FEX-0117",
+      "descricao": "FEX-0117"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-01",
+    "dataFimAfastamento": "2025-11-07",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 2472.75,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 2472.75,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212877147,
+    "viagem": {
+      "motivo": "Participar da 30ª Sessão da Conferência das Partes (COP30) da Convenção-Quadro das Nações Unidas sobre Mudança do Clima (UNFCCC).",
+      "pcdp": "0000000000021512957",
+      "ano": 2025,
+      "numPcdp": "001353/25",
+      "justificativaUrgente": "Participação confirmada nesta data.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.360.978-**",
+      "nis": "",
+      "nome": "JULIANA CARDOSO BENEDETTI"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000030014",
+      "descricao": "CONSELHEIRO"
+    },
+    "funcao": {
+      "codigoSIAPE": "FEX-0213",
+      "descricao": "FEX-0213"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110781",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/ASSESSORIA ESP/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-02",
+    "dataFimAfastamento": "2025-11-10",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 2422.75,
+    "valorTotalPassagem": 7684.19,
+    "valorTotalViagem": 10106.94,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212904154,
+    "viagem": {
+      "motivo": "Informação protegida por sigilo nos termos da legislação vigente",
+      "pcdp": "0000000000021574235",
+      "ano": 2025,
+      "numPcdp": "Informações protegidas por sigilo",
+      "justificativaUrgente": "Informação protegida por sigilo nos termos da legislação vigente",
+      "urgenciaViagem": "Sigiloso"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "",
+      "nis": "",
+      "nome": "Informações protegidas por sigilo"
+    },
+    "cargo": {
+      "codigoSIAPE": "",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "funcao": {
+      "codigoSIAPE": "-11",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "tipoViagem": "Internacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "-11",
+      "nome": "Sigilosa",
+      "descricaoPoder": "",
+      "orgaoVinculado": {
+        "codigoSIAFI": "-11",
+        "cnpj": "",
+        "sigla": "",
+        "nome": "Sigiloso"
+      },
+      "orgaoMaximo": {
+        "codigo": "-11",
+        "sigla": "-11",
+        "nome": "Sigiloso"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-06",
+    "dataFimAfastamento": "2025-11-09",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 0.0,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 102.33,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212907170,
+    "viagem": {
+      "motivo": "DESLOCAMENTO PARA BELEM/PA- CONFORME SOLICITAÇÃO 1158/25, DA COORDENAÇÃO DA VIAGEM.",
+      "pcdp": "0000000000021574699",
+      "ano": 2025,
+      "numPcdp": "001455/25",
+      "justificativaUrgente": "PERIDO DEFINIDO PELA COORDENAÇÃO DE VIAGEM.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.903.401-**",
+      "nis": "",
+      "nome": "LUIZ ANTONIO GONCALVES DE OLIVEIRA"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "CCX-0205",
+      "descricao": "CCX-0205"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-01",
+    "dataFimAfastamento": "2025-11-10",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 3477.3,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 3477.3,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212915746,
+    "viagem": {
+      "motivo": "DESLOCAMENTO PARA BELEM/PA- CONFORME SOLICITAÇÃO 1158/25, DA COORDENAÇÃO DA VIAGEM.",
+      "pcdp": "0000000000021574924",
+      "ano": 2025,
+      "numPcdp": "001460/25-1C",
+      "justificativaUrgente": "PERIDO DEFINIDO PELA COORDENAÇÃO DE VIAGEM.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.708.701-**",
+      "nis": "",
+      "nome": "FRANCINE FERRAZ GUNTHER"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000500050",
+      "descricao": "OFICIAL DE CHANCELARIA"
+    },
+    "funcao": {
+      "codigoSIAPE": "FEX-0210",
+      "descricao": "FEX-0210"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-04",
+    "dataFimAfastamento": "2025-11-10",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 2322.75,
+    "valorTotalPassagem": 3951.75,
+    "valorTotalViagem": 6274.5,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212917338,
+    "viagem": {
+      "motivo": "DESLOCAMENTO PARA BELEM/PA- CONFORME SOLICITAÇÃO 1158/25, DA COORDENAÇÃO DA VIAGEM.",
+      "pcdp": "0000000000021574788",
+      "ano": 2025,
+      "numPcdp": "001457/25",
+      "justificativaUrgente": "PERIDO DEFINIDO PELA COORDENAÇÃO DE VIAGEM.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.284.416-**",
+      "nis": "",
+      "nome": "LEANDRO ROCHA DE ARAUJO"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000030013",
+      "descricao": "PRIMEIRO SECRETARIO"
+    },
+    "funcao": {
+      "codigoSIAPE": "FEX-0210",
+      "descricao": "FEX-0210"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-01",
+    "dataFimAfastamento": "2025-11-10",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 3477.3,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 3477.3,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212925090,
+    "viagem": {
+      "motivo": "DESLOCAMENTO PARA BELÉM/PA- CONFORME SOLICTAÇÃO 1241/25, DA COORDENAÇÃO DE VIAGEM.",
+      "pcdp": "0000000000021608931",
+      "ano": 2025,
+      "numPcdp": "001508/25",
+      "justificativaUrgente": "PERIODO DEFINIDO PELA COORDENAÇÃO DE VIAGEM.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.990.346-**",
+      "nis": "",
+      "nome": "JULIA CAMILO FERNANDES SILVA"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "CCX-0215",
+      "descricao": "CCX-0215"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-06",
+    "dataFimAfastamento": "2025-11-10",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 1613.65,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 1613.65,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212950298,
+    "viagem": {
+      "motivo": "DESLOCAMENTO PARA BELÉM - PA, CONFORME SOLICITAÇÃO Nº 1253/25 DA COORDENAÇÃO DE VIAGEM.",
+      "pcdp": "0000000000021633827",
+      "ano": 2025,
+      "numPcdp": "001555/25",
+      "justificativaUrgente": "PERÍODO DEFINIDO PELA COORDENAÇÃO DA VIAGEM JUNTAMENTE COM O GABINETE PESSOAL.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.109.141-**",
+      "nis": "",
+      "nome": "VALMIR MORAES DA SILVA"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "CCX-0116",
+      "descricao": "CCX-0116"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-19",
+    "dataFimAfastamento": "2025-11-19",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 304.55,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 304.55,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212951141,
+    "viagem": {
+      "motivo": "DESLOCAMENTO PARA BELEM/PA- CONFORME SOLICITAÇÃO 1245/25, ANEXA DA COORDENAÇÃO DA VIAGEM.",
+      "pcdp": "0000000000021608192",
+      "ano": 2025,
+      "numPcdp": "001503/25",
+      "justificativaUrgente": "PERIODO DEFINIDO PELA COORDENAÇÃO DE VIAGEM.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.980.399-**",
+      "nis": "",
+      "nome": "CARLA COSTA ALVES"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "CCX-0215",
+      "descricao": "CCX-0215"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-08",
+    "dataFimAfastamento": "2025-11-08",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 350.0,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 350.0,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212951653,
+    "viagem": {
+      "motivo": "Integrar destacamento precursor e ESCAV da viagem do Senhor Presidente da República à cidade de Maputo, Moçambique, conforme OFÍCIOS-CIRCULARES Nº 542/2025/CGEV/DCEV/SCAE/GSI/PR e 544/2025/CGEV/DCEV/SCAE/GSI/PR (Processos de nº 00185.006187/2025-09 e 00185.006194/2025-01).",
+      "pcdp": "0000000000021613884",
+      "ano": 2025,
+      "numPcdp": "001514/25",
+      "justificativaUrgente": "Em virtude das visitas de reconhecimento e da Agenda do Senhor Presidente da República na cidade de Maputo, Moçambique.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Não realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.000.000-**",
+      "nis": "",
+      "nome": "FABIO SIMAO ALVES"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000030014",
+      "descricao": "CONSELHEIRO"
+    },
+    "funcao": {
+      "codigoSIAPE": "FEX-0115",
+      "descricao": "FEX-0115"
+    },
+    "tipoViagem": "Internacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2025-11-19",
+    "dataFimAfastamento": "2025-11-25",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 0.0,
+    "valorTotalPassagem": 6787.63,
+    "valorTotalViagem": 6964.05,
+    "valorTotalDevolucao": 0.0
+  }
+]

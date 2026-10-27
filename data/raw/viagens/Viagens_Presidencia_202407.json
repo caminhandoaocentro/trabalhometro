@@ -1,0 +1,1127 @@
+[
+  {
+    "id": 212108060,
+    "viagem": {
+      "motivo": "5ª Reunião Ordinária do Conselho de Participação Social da Presidência da República",
+      "pcdp": "0000000000020102317",
+      "ano": 2024,
+      "numPcdp": "001325/24",
+      "justificativaUrgente": "necessidade de confirmação de dados.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.601.356-**",
+      "nis": "",
+      "nome": "CELIA GONCALVES SOUZA"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "-1",
+      "descricao": "Sem informação"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110849",
+      "nome": "CONSELHO DE PARTICIPACAO SOCIAL",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-09",
+    "dataFimAfastamento": "2024-07-12",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 1582.5,
+    "valorTotalPassagem": 2413.82,
+    "valorTotalViagem": 3996.32,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212108828,
+    "viagem": {
+      "motivo": "5ª Reunião Ordinária do Conselho de Participação Social da Presidência da República",
+      "pcdp": "0000000000020086169",
+      "ano": 2024,
+      "numPcdp": "001209/24",
+      "justificativaUrgente": "confirmação de dados.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.530.238-**",
+      "nis": "",
+      "nome": "ILDSLAINE MONICA DA SILVA"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "-1",
+      "descricao": "Sem informação"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110849",
+      "nome": "CONSELHO DE PARTICIPACAO SOCIAL",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-09",
+    "dataFimAfastamento": "2024-07-12",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 1582.5,
+    "valorTotalPassagem": 1315.18,
+    "valorTotalViagem": 2897.68,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212126042,
+    "viagem": {
+      "motivo": "Informação protegida por sigilo nos termos da legislação vigente",
+      "pcdp": "0000000000020128913",
+      "ano": 2024,
+      "numPcdp": "Informações protegidas por sigilo",
+      "justificativaUrgente": "Informação protegida por sigilo nos termos da legislação vigente",
+      "urgenciaViagem": "Sigiloso"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "",
+      "nis": "",
+      "nome": "Informações protegidas por sigilo"
+    },
+    "cargo": {
+      "codigoSIAPE": "",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "funcao": {
+      "codigoSIAPE": "-11",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "-11",
+      "nome": "Sigilosa",
+      "descricaoPoder": "",
+      "orgaoVinculado": {
+        "codigoSIAFI": "-11",
+        "cnpj": "",
+        "sigla": "",
+        "nome": "Sigiloso"
+      },
+      "orgaoMaximo": {
+        "codigo": "-11",
+        "sigla": "-11",
+        "nome": "Sigiloso"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-02",
+    "dataFimAfastamento": "2024-07-04",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 838.65,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 838.65,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212127260,
+    "viagem": {
+      "motivo": "Acompanhar e assessorar o Assessor-Chefe na viagem que fará ao Rio de Janeiro para Lançamento da Aliança Global contra a Fome (G20) e participação no evento Estados do Futuro (MGI/BNDES).",
+      "pcdp": "0000000000020121830",
+      "ano": 2024,
+      "numPcdp": "001521/24-1C",
+      "justificativaUrgente": "Inclusão trecho de retorno",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.085.938-**",
+      "nis": "",
+      "nome": "FREDERICO SOUZA DE QUEIROZ ASSIS"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "CCX-0215",
+      "descricao": "CCX-0215"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110781",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/ASSESSORIA ESP/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-23",
+    "dataFimAfastamento": "2024-07-25",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 1458.65,
+    "valorTotalPassagem": 4296.96,
+    "valorTotalViagem": 5755.61,
+    "valorTotalDevolucao": 395.0
+  },
+  {
+    "id": 212132551,
+    "viagem": {
+      "motivo": "Informação protegida por sigilo nos termos da legislação vigente",
+      "pcdp": "0000000000020126850",
+      "ano": 2024,
+      "numPcdp": "Informações protegidas por sigilo",
+      "justificativaUrgente": "Informação protegida por sigilo nos termos da legislação vigente",
+      "urgenciaViagem": "Sigiloso"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "",
+      "nis": "",
+      "nome": "Informações protegidas por sigilo"
+    },
+    "cargo": {
+      "codigoSIAPE": "",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "funcao": {
+      "codigoSIAPE": "-11",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "-11",
+      "nome": "Sigilosa",
+      "descricaoPoder": "",
+      "orgaoVinculado": {
+        "codigoSIAFI": "-11",
+        "cnpj": "",
+        "sigla": "",
+        "nome": "Sigiloso"
+      },
+      "orgaoMaximo": {
+        "codigo": "-11",
+        "sigla": "-11",
+        "nome": "Sigiloso"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-02",
+    "dataFimAfastamento": "2024-07-04",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 838.65,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 838.65,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212134962,
+    "viagem": {
+      "motivo": "Proposto foi convidada para realizar uma apresentação em mesa na reunião do Conselho de Participação Social",
+      "pcdp": "0000000000020132568",
+      "ano": 2024,
+      "numPcdp": "001595/24",
+      "justificativaUrgente": "Decisão sobre a convocação e participação realizada no dia 09/07.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.198.640-**",
+      "nis": "",
+      "nome": "JULIANE DA COSTA FURNO"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "-1",
+      "descricao": "Sem informação"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110849",
+      "nome": "CONSELHO DE PARTICIPACAO SOCIAL",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-10",
+    "dataFimAfastamento": "2024-07-10",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 307.5,
+    "valorTotalPassagem": 4575.35,
+    "valorTotalViagem": 4882.85,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212137370,
+    "viagem": {
+      "motivo": "5ª Reunião Ordinária do Conselho de Participação Social da Presidência da República",
+      "pcdp": "0000000000020102332",
+      "ano": 2024,
+      "numPcdp": "001326/24",
+      "justificativaUrgente": "necessidade de confirmação de dados.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.568.388-**",
+      "nis": "",
+      "nome": "TEREZA CRISTINA RODRIGUES VILLELA"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "-1",
+      "descricao": "Sem informação"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110849",
+      "nome": "CONSELHO DE PARTICIPACAO SOCIAL",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-09",
+    "dataFimAfastamento": "2024-07-13",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 2007.5,
+    "valorTotalPassagem": 2914.41,
+    "valorTotalViagem": 4921.91,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212138778,
+    "viagem": {
+      "motivo": "DESLOCAMENTO PARA VÁRZEA GRANDE-MT COMPONDO COMITIVA PRESIDENCIAL, CONFORME SOLICITAÇÃO DE DIÁRIAS Nº 1117/2024-CGEV/DCEV/SCAE/GSI DA COORDENAÇÃO DE VIAGEM.",
+      "pcdp": "0000000000020203788",
+      "ano": 2024,
+      "numPcdp": "001786/24",
+      "justificativaUrgente": "PERÍODO E DATAS DEFINIDAS PELO GABINETE PESSOAL DO PRESIDENTE E PELA COORDENAÇÃO DE VIAGEM CONFORME AGENDA DO SR. PRESIDENTE DA REPÚBLICA.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.109.141-**",
+      "nis": "",
+      "nome": "VALMIR MORAES DA SILVA"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "CCX-0116",
+      "descricao": "CCX-0116"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-31",
+    "dataFimAfastamento": "2024-07-31",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 304.55,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 304.55,
+    "valorTotalDevolucao": 25.0
+  },
+  {
+    "id": 212145031,
+    "viagem": {
+      "motivo": "SOLICITAÇÃO DE DIARIAS 1034/2024- CGEV/SCAE- RIO DE JANEIRO/RJ- COORDENADO PELO GABINETE DE SEGURANÇA INSTITUCIONAL E O GABINETE PESSOAL.",
+      "pcdp": "0000000000020171712",
+      "ano": 2024,
+      "numPcdp": "001692/24",
+      "justificativaUrgente": "DEIXOU DE CUMPRIR OS PRAZOS PREVISTOS NA LEGISLAÇÃO, TENDO EM VISTA A MISSÃO TER SIDO CONFIRMADA INTEMPESTIVAMENT. (MISSÃO CONFIRMADA ATRAVES NUP 00185.004552/2024-51 )",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.802.147-**",
+      "nis": "",
+      "nome": "LAIS MONTEIRO PONTES DA SILVA"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000030012",
+      "descricao": "SEGUNDO SECRETARIO"
+    },
+    "funcao": {
+      "codigoSIAPE": "FEX-0210",
+      "descricao": "FEX-0210"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-22",
+    "dataFimAfastamento": "2024-07-24",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 1063.65,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 1063.65,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212145996,
+    "viagem": {
+      "motivo": "Informação protegida por sigilo nos termos da legislação vigente",
+      "pcdp": "0000000000020123824",
+      "ano": 2024,
+      "numPcdp": "Informações protegidas por sigilo",
+      "justificativaUrgente": "Informação protegida por sigilo nos termos da legislação vigente",
+      "urgenciaViagem": "Sigiloso"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "",
+      "nis": "",
+      "nome": "Informações protegidas por sigilo"
+    },
+    "cargo": {
+      "codigoSIAPE": "",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "funcao": {
+      "codigoSIAPE": "-11",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "-11",
+      "nome": "Sigilosa",
+      "descricaoPoder": "",
+      "orgaoVinculado": {
+        "codigoSIAFI": "-11",
+        "cnpj": "",
+        "sigla": "",
+        "nome": "Sigiloso"
+      },
+      "orgaoMaximo": {
+        "codigo": "-11",
+        "sigla": "-11",
+        "nome": "Sigiloso"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-02",
+    "dataFimAfastamento": "2024-07-04",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 838.65,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 838.65,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212154822,
+    "viagem": {
+      "motivo": "SOLICITAÇÃO DE DIÁRIAS Nº 923/2024 - CGEV/DCEV/SCP- SALTO - SP COMPONDO ESCAV PRESIDENCIAL. COORDENADA PELO GABINETE DE SEGURANÇA INSTITUCIONAL E O GABINETE PESSOAL.",
+      "pcdp": "0000000000020128287",
+      "ano": 2024,
+      "numPcdp": "001561/24",
+      "justificativaUrgente": "PERÍODO E DATAS DEFINIDAS PELO GABINETE PESSOAL DO PRESIDENTE E PELA COORDENAÇÃO DE VIAGEM CONFORME AGENDA DO SR. PRESIDENTE DA REPÚBLICA.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.061.889-**",
+      "nis": "",
+      "nome": "FERNANDA MANSUR TANSINI"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000030013",
+      "descricao": "PRIMEIRO SECRETARIO"
+    },
+    "funcao": {
+      "codigoSIAPE": "FEX-0210",
+      "descricao": "FEX-0210"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-02",
+    "dataFimAfastamento": "2024-07-03",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 559.1,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 559.1,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212157830,
+    "viagem": {
+      "motivo": "ESCAV referente à viagem do Senhor Presidente da República à cidade de Assunção/Paraguai.",
+      "pcdp": "0000000000020121029",
+      "ano": 2024,
+      "numPcdp": "001516/24",
+      "justificativaUrgente": "Sem informação",
+      "urgenciaViagem": "Não"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.442.541-**",
+      "nis": "",
+      "nome": "THALISSON FELIPE SCHIMALTZ DE SENA PONTES"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000000000",
+      "descricao": ""
+    },
+    "funcao": {
+      "codigoSIAPE": "RMA-0004",
+      "descricao": "RMA-0004"
+    },
+    "tipoViagem": "Internacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-06",
+    "dataFimAfastamento": "2024-07-08",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 0.0,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 115.6,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212159154,
+    "viagem": {
+      "motivo": "Informação protegida por sigilo nos termos da legislação vigente",
+      "pcdp": "0000000000020161056",
+      "ano": 2024,
+      "numPcdp": "Informações protegidas por sigilo",
+      "justificativaUrgente": "Informação protegida por sigilo nos termos da legislação vigente",
+      "urgenciaViagem": "Sigiloso"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "",
+      "nis": "",
+      "nome": "Informações protegidas por sigilo"
+    },
+    "cargo": {
+      "codigoSIAPE": "",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "funcao": {
+      "codigoSIAPE": "-11",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "-11",
+      "nome": "Sigilosa",
+      "descricaoPoder": "",
+      "orgaoVinculado": {
+        "codigoSIAFI": "-11",
+        "cnpj": "",
+        "sigla": "",
+        "nome": "Sigiloso"
+      },
+      "orgaoMaximo": {
+        "codigo": "-11",
+        "sigla": "-11",
+        "nome": "Sigiloso"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-17",
+    "dataFimAfastamento": "2024-07-19",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 1063.65,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 1063.65,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212159602,
+    "viagem": {
+      "motivo": "SOLICITAÇÃO DE DIÁRIAS Nº 940/2024 - CGEV/DCEV/SCP- CAMPINAS-SP COMPONDO ESCAV PRESIDENCIAL. COORDENADA PELO GABINETE DE SEGURANÇA INSTITUCIONAL E O GABINETE PESSOAL.",
+      "pcdp": "0000000000020142674",
+      "ano": 2024,
+      "numPcdp": "001598/24",
+      "justificativaUrgente": "PERÍODO E DATAS DEFINIDAS PELO GABINETE PESSOAL DO PRESIDENTE E PELA COORDENAÇÃO DE VIAGEM CONFORME AGENDA DO SR. PRESIDENTE DA REPÚBLICA.",
+      "urgenciaViagem": "Sim"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "***.802.147-**",
+      "nis": "",
+      "nome": "LAIS MONTEIRO PONTES DA SILVA"
+    },
+    "cargo": {
+      "codigoSIAPE": "000000000000000000000000030012",
+      "descricao": "SEGUNDO SECRETARIO"
+    },
+    "funcao": {
+      "codigoSIAPE": "FEX-0210",
+      "descricao": "FEX-0210"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "110780",
+      "nome": "SEGURO VIAGEM INTERNACIONAL/GAB. PESSOAL/PR",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoVinculado": {
+        "codigoSIAFI": "20101",
+        "cnpj": "00394411000109",
+        "sigla": "PR",
+        "nome": "Presidência da República"
+      },
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-03",
+    "dataFimAfastamento": "2024-07-04",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 559.1,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 559.1,
+    "valorTotalDevolucao": 0.0
+  },
+  {
+    "id": 212163565,
+    "viagem": {
+      "motivo": "Informação protegida por sigilo nos termos da legislação vigente",
+      "pcdp": "0000000000020117601",
+      "ano": 2024,
+      "numPcdp": "Informações protegidas por sigilo",
+      "justificativaUrgente": "Informação protegida por sigilo nos termos da legislação vigente",
+      "urgenciaViagem": "Sigiloso"
+    },
+    "situacao": "Realizada",
+    "beneficiario": {
+      "cpfFormatado": "",
+      "nis": "",
+      "nome": "Informações protegidas por sigilo"
+    },
+    "cargo": {
+      "codigoSIAPE": "",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "funcao": {
+      "codigoSIAPE": "-11",
+      "descricao": "Informações protegidas por sigilo"
+    },
+    "tipoViagem": "Nacional",
+    "orgao": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "orgaoPagamento": {
+      "nome": "Presidência da República - Unidades com vínculo direto",
+      "codigoSIAFI": "20000",
+      "cnpj": "00000000000000",
+      "sigla": "PR\t",
+      "descricaoPoder": "EXECUTIVO",
+      "orgaoMaximo": {
+        "codigo": "20000",
+        "sigla": "PR\t",
+        "nome": "Presidência da República"
+      }
+    },
+    "unidadeGestoraResponsavel": {
+      "codigo": "-11",
+      "nome": "Sigilosa",
+      "descricaoPoder": "",
+      "orgaoVinculado": {
+        "codigoSIAFI": "-11",
+        "cnpj": "",
+        "sigla": "",
+        "nome": "Sigiloso"
+      },
+      "orgaoMaximo": {
+        "codigo": "-11",
+        "sigla": "-11",
+        "nome": "Sigiloso"
+      }
+    },
+    "dataInicioAfastamento": "2024-07-01",
+    "dataFimAfastamento": "2024-07-02",
+    "valorTotalRestituicao": 0.0,
+    "valorTotalTaxaAgenciamento": 0.0,
+    "valorMulta": 0.0,
+    "valorTotalDiarias": 609.1,
+    "valorTotalPassagem": 0.0,
+    "valorTotalViagem": 609.1,
+    "valorTotalDevolucao": 0.0
+  }
+]

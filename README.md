@@ -41,9 +41,16 @@ trabalhometro/
 │   ├── viagens.js        # Deslocamentos oficiais e coordenadas
 │   ├── novopac.js        # Indicadores oficiais de transparência do Novo PAC
 │   ├── entregas.js       # Entregas, leis e programas governamentais
-│   └── raw/              # Data Lake Local (CSV e JSON brutos)
-│       ├── cpgf/         # Transações linha por linha do cartão corporativo
-│       ├── viagens/      # Processos brutos de viagens da API da CGU
+│   ├── avaliacao.js      # Matriz desenvolvimentista e projetos estruturantes
+│   ├── export/           # 📦 Datasets prontos para uso (CSV e JSON limpos)
+│   │   ├── gastos.csv / .json       # Série histórica mensal do CPGF
+│   │   ├── viagens.csv / .json      # Destinos, coordenadas e motivos
+│   │   ├── entregas.csv / .json     # 29 leis e atos com links oficiais
+│   │   ├── novopac.json / fontes.csv # Financiamento e metas do Novo PAC
+│   │   └── avaliacao.json           # Pilares e projetos de referência
+│   └── raw/              # 🗄️ Data Lake Bruto da CGU (linha por linha)
+│       ├── cpgf/         # 44 CSVs mensais originais do cartão corporativo
+│       ├── viagens/      # 46 JSONs mensais brutos da API da CGU
 │       └── despesas/     # Fornecedores e favorecidos da Presidência
 ├── scripts/
 │   ├── config.py         # Configurações gerais, rotas e coordenadas
@@ -52,11 +59,41 @@ trabalhometro/
 │   ├── fetch_viagens_oficiais.py # Consolidação de viagens internacionais e de Estado
 │   ├── fetch_novopac.py  # Captura de dados de transparência do Novo PAC (Casa Civil)
 │   ├── fetch_entregas.py # Catálogo de entregas e atos sancionados (2023 - 2026)
+│   ├── export_datasets.py # Exportador de datasets para CSV e JSON limpos
 │   ├── update_all.py     # Orquestrador único que atualiza todo o site
 │   └── download_raw_data.py # Download massivo de dados brutos para o Data Lake local
 ├── requirements.txt      # Dependências Python (requests, beautifulsoup4, etc.)
 └── README.md
 ```
+
+---
+
+## 📊 Como consumir os dados (Open Data)
+
+Você pode usar os dados diretamente em Python (Pandas), R, Excel ou na sua aplicação:
+
+### Em Python / Pandas:
+```python
+import pandas as pd
+
+# Carregar série histórica de gastos do cartão corporativo
+url_gastos = "https://raw.githubusercontent.com/caminhandoaocentro/trabalhometro/main/data/export/gastos.csv"
+df_gastos = pd.read_csv(url_gastos)
+print(df_gastos.head())
+
+# Carregar viagens oficiais com coordenadas
+url_viagens = "https://raw.githubusercontent.com/caminhandoaocentro/trabalhometro/main/data/export/viagens.csv"
+df_viagens = pd.read_csv(url_viagens)
+print(df_viagens.describe())
+```
+
+### Arquivos disponíveis para download direto:
+* 💳 **Gastos do CPGF:** [`data/export/gastos.csv`](data/export/gastos.csv) · [`gastos.json`](data/export/gastos.json)
+* ✈️ **Viagens Oficiais:** [`data/export/viagens.csv`](data/export/viagens.csv) · [`viagens.json`](data/export/viagens.json)
+* 🏛️ **Entregas e Reformas:** [`data/export/entregas.csv`](data/export/entregas.csv) · [`entregas.json`](data/export/entregas.json)
+* 🏗️ **Novo PAC:** [`data/export/novopac.json`](data/export/novopac.json) · [`novopac_fontes.csv`](data/export/novopac_fontes.csv)
+* 🎯 **Matriz Desenvolvimentista:** [`data/export/avaliacao.json`](data/export/avaliacao.json)
+* 🗄️ **Data Lake Bruto Oficial:** [`data/raw/`](data/raw/) com os 44 CSVs mensais do CPGF e 46 JSONs de viagens da CGU.
 
 ---
 

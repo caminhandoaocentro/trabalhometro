@@ -829,6 +829,50 @@ h2::before {
 .fontes { padding-left: 1.2rem; margin-bottom: 1rem; }
 .fontes li { margin-bottom: .5rem; }
 .fontes a { color: var(--pt-red-light); }
+
+.downloads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.download-card {
+  background: var(--bg-card);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+.download-card strong {
+  font-size: 0.9rem;
+  color: var(--pt-white);
+}
+.download-links {
+  display: flex;
+  gap: 0.5rem;
+}
+.download-links a {
+  flex: 1;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  background: var(--pt-red-subtle);
+  color: var(--pt-red-light);
+  border: 1px solid rgba(215, 25, 32, 0.3);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.download-links a:hover {
+  background: var(--pt-red);
+  color: var(--pt-white);
+  border-color: var(--pt-red-light);
+}
+
 footer {
   text-align: center; color: var(--mut); padding: 3rem 1rem; font-size: .88rem;
   border-top: 1px solid var(--borda);

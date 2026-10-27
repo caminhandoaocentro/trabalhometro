@@ -11,6 +11,7 @@ import fetch_viagens_oficiais
 import fetch_viagens_api
 import fetch_novopac
 import fetch_entregas
+import export_datasets
 
 
 def atualizar_tudo():
@@ -84,6 +85,10 @@ def atualizar_tudo():
     print(f"    - Gastos: {len(gastos)} meses oficiais")
     print(f"    - Viagens: {len(todas_viagens)} destinos catalogados ({paises_visitados} países)")
     print(f"    - Entregas: {len(entregas)} atos e obras oficiais")
+
+    # 5. Exportação aberta (CSV + JSON)
+    print("\n[5/5] Gerando exportações públicas (data/export/)...")
+    export_datasets.exportar_todos()
     print("=" * 65)
 
 
