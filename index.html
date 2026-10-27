@@ -14,6 +14,7 @@
   <header class="topbar">
     <a href="#" class="logo"><span class="estrela">★</span> Trabalh<span class="destaque">ô</span>metro</a>
     <nav>
+      <a href="#avaliacao">Termômetro</a>
       <a href="#gastos">Gastos</a>
       <a href="#viagens">Viagens</a>
       <a href="#pac">Novo PAC</a>
@@ -35,6 +36,29 @@
         <div class="stat"><span id="st-entregas">—</span><small>entregas registradas</small></div>
       </div>
       <p class="atualizado">Atualizado em <span id="st-data">—</span></p>
+    </section>
+
+    <section id="avaliacao" class="bloco">
+      <h2>Termômetro Desenvolvimentista</h2>
+      <p class="sub">Avaliação independente baseada em parâmetros explícitos: Estado investidor, estoques reguladores, avanço industrial e combate a privilégios.</p>
+
+      <div class="manifesto-box">
+        <div class="manifesto-tag">🎯 Metodologia de Avaliação</div>
+        <h3>A Régua de Avaliação de Centro</h3>
+        <p>O Trabalhômetro não faz oposição cega nem adesão acrítica. Avaliamos o governo com base em critérios técnicos: <strong>o Estado deve agir como motor de investimento</strong> (industrializar, garantir comida no prato do trabalhador via estoques da Conab, destravar infraestrutura com capital privado e exercer segurança e ordem firmes), <strong>mas deve cortar privilégios e prestar contas centavo por centavo</strong>.</p>
+      </div>
+
+      <div id="grid-pilares" class="pilares-grid"></div>
+
+      <div class="projetos-estruturantes-box">
+        <div class="projetos-cabecalho">
+          <div>
+            <h3>Projetos Estruturantes de Impacto Nacional</h3>
+            <p class="sub-mini" style="margin-bottom:0">Monitoramento a nível de projeto e eixos estratégicos de infraestrutura</p>
+          </div>
+        </div>
+        <div id="grid-projetos-estruturantes" class="projetos-grid"></div>
+      </div>
     </section>
 
     <section id="gastos" class="bloco">
@@ -60,6 +84,26 @@
         </div>
       </div>
       <p class="nota-defasagem">ℹ️ <strong>Transparência oficial:</strong> Os dados de faturas do cartão corporativo são disponibilizados pela CGU após a liquidação bancária pelo Banco do Brasil, com defasagem técnica natural de 30 a 60 dias.</p>
+
+      <div class="raio-x-box">
+        <div class="raio-x-header">
+          <span class="raio-x-badge">🔍 Raio-X da Transparência</span>
+          <h4>Entenda a composição dos dados e a salvaguarda legal da LAI</h4>
+        </div>
+        <p>Conforme o art. 24, § 2º da Lei de Acesso à Informação (Lei 12.527/2011), dados que ponham em risco a segurança do Presidente da República e seus familiares são classificados legalmente como reservados até o fim do mandato. Do total de R$ 84,5 milhões faturados pelo CPGF da Presidência (2023-2026):</p>
+        <div class="raio-x-grid">
+          <div class="raio-x-item">
+            <span class="raio-x-val">98,6% <small>(R$ 83,37 mi)</small></span>
+            <span class="raio-x-rotulo">Segurança Institucional &amp; Comitiva</span>
+            <p class="raio-x-sub">Protegidos pelo art. 24 da LAI (GSI e Secretaria Especial de Administração da PR) para segurança de viagens e deslocamentos.</p>
+          </div>
+          <div class="raio-x-item">
+            <span class="raio-x-val">1,4% <small>(R$ 1,17 mi)</small></span>
+            <span class="raio-x-rotulo">Despesas Administrativas Abertas</span>
+            <p class="raio-x-sub">Com CNPJ/CPF de fornecedores e produtos discriminados no Portal da Transparência (combustíveis, suprimentos e serviços).</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="viagens" class="bloco">
@@ -143,6 +187,7 @@
   <script src="data/gastos.js"></script>
   <script src="data/viagens.js"></script>
   <script src="data/novopac.js"></script>
+  <script src="data/avaliacao.js"></script>
   <script src="data/entregas.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>

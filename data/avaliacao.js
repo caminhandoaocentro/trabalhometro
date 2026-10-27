@@ -1,0 +1,147 @@
+// Matriz de Avaliação do Trabalhômetro — Visão Desenvolvimentista de Centro
+// Critérios explícitos, regras de avaliação e acompanhamento por projetos estruturantes.
+window.DADOS = window.DADOS || {};
+window.DADOS.avaliacao = {
+  manifesto: {
+    titulo: "A Régua Desenvolvimentista de Centro",
+    subtitulo: "Um Estado indutor, investidor e garantidor de estoques e ordem, sem privilégios e com cobrança rigorosa de eficiência.",
+    tese: "O Trabalhômetro não faz oposição cega nem adesão acrítica. Avaliamos o governo sob parâmetros claros: o Estado deve promover reindustrialização, garantir comida na mesa do cidadão por estoques reguladores, atrair capital privado em infraestrutura e exercer vigilância e segurança firmes. Ao mesmo tempo, cobramos corte de privilégios e transparência centavo por centavo."
+  },
+  pilares: [
+    {
+      id: "reindustrializacao",
+      icone: "🏭",
+      titulo: "Reindustrialização & Complexidade Produtiva",
+      regra: "O Estado deve agir como indutor do desenvolvimento industrial nacional, saindo da dependência exclusiva de commodities agrícolas e minerais e combatendo o rentismo financeiro improdutivo.",
+      projetos_chave: [
+        "Nova Indústria Brasil (NIB) — R$ 300 bilhões em crédito e inovação",
+        "Marco Legal do Hidrogênio de Baixa Emissão (Lei 14.948)",
+        "Lei do Combustível do Futuro (SAF, Biometano e Etanol - Lei 14.993)",
+        "Retomada de investimentos em refino e fertilizantes (Rnest / Petrobras)"
+      ],
+      analise: "Avanço regulatório e financeiro significativo na retomada de políticas industriais setoriais e transição energética. O desafio permanece na taxa básica de juros e no custo de capital para o reinvestimento privado.",
+      status: "honrado",
+      status_label: "Avanço Estrutural",
+      nota: 8.5
+    },
+    {
+      id: "seguranca_alimentar",
+      icone: "🌾",
+      titulo: "Segurança Alimentar & Poder de Compra",
+      regra: "Estado estratégico precisa manter estoques reguladores de comida (via Conab) para impedir explosão de preços de alimentos básicos e garantir aumento real permanente de renda ao trabalhador.",
+      projetos_chave: [
+        "Retomada da Conab e da política de compras públicas da agricultura familiar",
+        "Isenção total de tributos para a Cesta Básica Nacional na Reforma Tributária (EC 132)",
+        "Política permanente de ganho real do Salário Mínimo (INPC + PIB pela Lei 14.663)",
+        "Plano Brasil Sem Fome integrando rede SUAS e alimentação escolar"
+      ],
+      analise: "Cumprimento sólido das diretrizes de garantia de renda e desoneração dos alimentos essenciais. A recomposição dos estoques físicos da Conab começou após anos de desmonte e precisa de expansão contínua de silos.",
+      status: "honrado",
+      status_label: "Honrado / Consistente",
+      nota: 9.0
+    },
+    {
+      id: "estado_investidor",
+      icone: "🏗️",
+      titulo: "Estado Investidor & Alavancagem Privada",
+      regra: "O Estado deve aplicar recursos públicos como 'capital paciente' que abre caminho e atrai investimentos privados maciços em infraestrutura e logística de grande porte.",
+      projetos_chave: [
+        "Novo PAC com R$ 765 bi mobilizados pelo setor privado (40% do total)",
+        "Ferrovia Transnordestina e Ferrovia de Integração Oeste-Leste (FIOL)",
+        "Leilões de linhas de transmissão de energia (mais de R$ 56 bi contratados)",
+        "Programa Acredita / Procred360 alavancando crédito com garantia pública"
+      ],
+      analise: "A modelagem do Novo PAC acertou ao colocar o setor privado como principal financiador individual (R$ 765 bi), usando o orçamento federal e estatais para destravar nós logísticos.",
+      status: "honrado",
+      status_label: "Em Execução Positiva",
+      nota: 8.0
+    },
+    {
+      id: "gastos_privilegios",
+      icone: "✂️",
+      titulo: "Rigor nos Gastos Públicos & Fim de Privilégios",
+      regra: "Transparência total dos gastos do Executivo, combate a privilégios corporativos e moderação rígida em despesas discricionárias de gabinete.",
+      projetos_chave: [
+        "Abertura integral das faturas do CPGF no Portal da Transparência sem sigilo de 100 anos",
+        "Média mensal de ~R$ 1,9 milhão no Cartão Corporativo da Presidência da República",
+        "Proteção legal da LAI (art. 24) que classifica ~98% dos gastos de segurança como reservados durante o mandato"
+      ],
+      analise: "A abertura dos dados mensais de cartão foi um avanço democrático fundamental. No entanto, o volume médio mensal permanece em patamar elevado e o alto índice de despesas sob a rubrica de segurança exige vigilância cidadã constante.",
+      status: "parcial",
+      status_label: "Alerta Crítico / Cobrança",
+      nota: 6.5
+    },
+    {
+      id: "seguranca_vigilancia",
+      icone: "🛡️",
+      titulo: "Segurança Pública, Soberania & Vigilância",
+      regra: "O Estado deve exercer vigilância ampla, uso intensivo de tecnologia e inteligência contra o crime organizado, desarticulação patrimonial de facções e repressão qualificada.",
+      projetos_chave: [
+        "Programa Celular Seguro (bloqueio ágil de aparelhos e contas com Anatel e bancos)",
+        "Operações de GLO e reforço integrado da Polícia Federal em portos e aeroportos",
+        "Ações integradas das Forças Armadas e PF na Terra Indígena Yanomami",
+        "Proposta de PEC da Segurança Pública para padronizar diretrizes das Polícias"
+      ],
+      analise: "O Celular Seguro foi uma inovação tecnológica exemplar de resposta rápida à criminalidade de rua. Contudo, a segurança pública ainda carece de maior endurecimento penal e resposta integrada mais agressiva contra o crime organizado nos estados.",
+      status: "parcial",
+      status_label: "Inovação com Desafios em Aberto",
+      nota: 6.8
+    }
+  ],
+  projetos_estruturantes: [
+    {
+      nome: "Ferrovia Transnordestina",
+      eixo: "Transporte e Logística",
+      investimento: "R$ 4,8 bilhões",
+      uf: "CE / PI",
+      executor: "Público / Concessão Privada",
+      meta: "Ligação ferroviária de grãos e minérios do sertão do Piauí ao Porto do Pecém (CE).",
+      status: "Obras aceleradas pelo Novo PAC com entrega prioritária."
+    },
+    {
+      nome: "Ferrovia de Integração Oeste-Leste (FIOL)",
+      eixo: "Transporte e Logística",
+      investimento: "R$ 1,5 bilhão (Trecho 1)",
+      uf: "BA",
+      executor: "Infra S.A. / BAMIN",
+      meta: "Escoamento de minério de ferro de Caetité até o Porto Sul em Ilhéus.",
+      status: "Trecho 1 em fase final de implantação."
+    },
+    {
+      nome: "Linhões de Transmissão de Energia Sustentável",
+      eixo: "Transição Energética",
+      investimento: "R$ 56 bilhões (Leilões ANEEL)",
+      uf: "NE / SE / CO",
+      executor: "Setor Privado (Concessões)",
+      meta: "Transportar a energia eólica e solar gerada no Nordeste para os centros de consumo do Sudeste.",
+      status: "Maior leilão de transmissão da história com obras em andamento."
+    },
+    {
+      nome: "Ampliação e Modernização da Rnest (Abreu e Lima)",
+      eixo: "Petróleo e Derivados",
+      investimento: "R$ 8,0 bilhões",
+      uf: "PE",
+      executor: "Petrobras",
+      meta: "Conclusão do Trem 2 para ampliar produção nacional de diesel S-10 de baixo teor de enxofre.",
+      status: "Obras retomadas gerando mais de 10 mil postos de trabalho."
+    },
+    {
+      nome: "100 Novos Institutos Federais (IFs)",
+      eixo: "Educação Profissional",
+      investimento: "R$ 3,9 bilhões",
+      uf: "Todos os 26 Estados + DF",
+      executor: "MEC / Governo Federal",
+      meta: "Criação de 140 mil novas vagas de ensino técnico integrado ao ensino médio.",
+      status: "Municípios selecionados e obras em fase de implantação."
+    },
+    {
+      nome: "Macrodrenagem e Saneamento da COP30",
+      eixo: "Cidades Sustentáveis",
+      investimento: "R$ 5,0 bilhões",
+      uf: "PA",
+      executor: "Governo Federal / Estado do Pará",
+      meta: "Transformação da infraestrutura urbana de Belém contra enchentes e parque linear da Doca.",
+      status: "Obras estruturantes prioritárias em execução."
+    }
+  ]
+};

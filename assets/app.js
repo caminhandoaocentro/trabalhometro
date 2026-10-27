@@ -47,7 +47,60 @@ $('#st-paises').textContent = new Set(viagens.filter(v => v.tipo === 'internacio
 $('#st-entregas').textContent = entregas.length;
 $('#st-data').textContent = meta.atualizado_em || '—';
 
-// 2. Gráfico de Gastos (Cartão Corporativo) com Chart.js
+// 2. Termômetro Desenvolvimentista (Pilares & Projetos Estruturantes)
+const avaliacao = D.avaliacao;
+if (avaliacao) {
+  const pilaresEl = $('#grid-pilares');
+  if (pilaresEl && avaliacao.pilares) {
+    pilaresEl.innerHTML = avaliacao.pilares.map(p => `
+      <article class="pilar-card">
+        <div>
+          <div class="pilar-topo">
+            <div class="pilar-titulo-wrap">
+              <span class="pilar-icone">${p.icone}</span>
+              <span class="pilar-titulo">${esc(p.titulo)}</span>
+            </div>
+            <span class="pilar-badge badge-${p.status === 'honrado' ? 'honrado' : 'parcial'}">${esc(p.status_label)}</span>
+          </div>
+
+          <div class="pilar-regra-box">
+            <strong>🎯 A Régua Desenvolvimentista:</strong>
+            <p>${esc(p.regra)}</p>
+          </div>
+
+          <div class="pilar-projetos">
+            <strong>Ações & Projetos de Referência:</strong>
+            <ul>
+              ${p.projetos_chave.map(pr => `<li>${esc(pr)}</li>`).join('')}
+            </ul>
+          </div>
+        </div>
+
+        <div class="pilar-analise">
+          <strong>⚖️ Análise Técnica / Cobrança:</strong>
+          <span>${esc(p.analise)}</span>
+        </div>
+      </article>
+    `).join('');
+  }
+
+  const projEl = $('#grid-projetos-estruturantes');
+  if (projEl && avaliacao.projetos_estruturantes) {
+    projEl.innerHTML = avaliacao.projetos_estruturantes.map(pj => `
+      <div class="projeto-card">
+        <div>
+          <span class="tag-eixo">${esc(pj.eixo)} · ${esc(pj.uf)}</span>
+          <h4>${esc(pj.nome)}</h4>
+          <div class="meta-inv">💰 ${esc(pj.investimento)} · ${esc(pj.executor)}</div>
+          <p class="desc">${esc(pj.meta)}</p>
+        </div>
+        <div class="status-obra">📌 ${esc(pj.status)}</div>
+      </div>
+    `).join('');
+  }
+}
+
+// 3. Gráfico de Gastos (Cartão Corporativo) com Chart.js
 const destaqueBoxEl = $('#destaque-gastos-box');
 const canvasChartEl = $('#grafico-chart');
 let chartGastosInstancia = null;
