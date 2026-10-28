@@ -18,7 +18,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": 9500000000,
     "descricao": "Universalização da bolsa-poupança para todos os estudantes do ensino médio público pertencentes a famílias no CadÚnico, reduzindo a evasão escolar a patamares históricos.",
-    "fonte_url": "https://www.gov.br/mec/pt-br/pe-de-meia"
+    "fonte_url": "https://www.gov.br/mec/pt-br/pe-de-meia",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Até R$ 9.200 em poupança por estudante",
+      "detalhe": "Garante renda mensal de R$ 200 mais depósito de R$ 1.000 ao fim de cada ano letivo aprovado e R$ 200 no Enem para jovens de baixa renda."
+    }
   },
   {
     "data": "2026-01-01",
@@ -27,7 +32,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": null,
     "descricao": "Aplicação contínua da fórmula de ganho real pelo INPC mais a taxa de crescimento do PIB, garantindo o maior poder de compra do piso nacional em décadas.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14663.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14663.htm",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Ganho real garantido acima da inflação",
+      "detalhe": "Aumento do poder de compra garantido por lei pela inflação (INPC) somada ao PIB, injetando renda líquida para mais de 54 milhões de trabalhadores e aposentados."
+    }
   },
   {
     "data": "2025-11-12",
@@ -36,7 +46,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": null,
     "descricao": "Aprovação e sanção das regras gerais do Imposto sobre Bens e Serviços (IBS) e Contribuição sobre Bens e Serviços (CBS), com trava da alíquota e cesta básica nacional 100% isenta.",
-    "fonte_url": "https://www.gov.br/fazenda/pt-br/assuntos/reforma-tributaria"
+    "fonte_url": "https://www.gov.br/fazenda/pt-br/assuntos/reforma-tributaria",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Cesta Básica Nacional com 100% de isenção de impostos",
+      "detalhe": "Isenção total de impostos federais e estaduais (IBS e CBS) sobre arroz, feijão, leite, carnes, ovos e alimentos essenciais do trabalhador."
+    }
   },
   {
     "data": "2025-09-08",
@@ -72,7 +87,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": null,
     "descricao": "Edição do Decreto Presidencial nº 12.499 aumentando as alíquotas do IOF sobre operações de crédito (PJ e PF), câmbio e remessas internacionais, além de alíquota de 5% sobre seguros de vida/VGBL para cumprimento das metas fiscais. O decreto foi barrado pelo Congresso Nacional (PDL 176/2025), mas o governo recorreu ao STF, onde o ministro Alexandre de Moraes concedeu liminar restabelecendo a maior parte do aumento.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12499.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12499.htm",
+    "impacto_bolso": {
+      "tipo": "onus",
+      "rotulo": "🔴 Ônus no Bolso: R$ 10 a 14 bi/ano em crédito e previdência mais caros",
+      "detalhe": "Encarecimento de empréstimos pessoais e parcelamentos (IOF de 0,38% + taxa diária), cobrança de 5% sobre aportes excedentes em previdência privada (VGBL) e repasse do custo de capital de giro das empresas nos preços de supermercados e serviços."
+    }
   },
   {
     "data": "2025-04-10",
@@ -90,7 +110,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": null,
     "descricao": "Viabilização de passagens aéreas a preços populares de até R$ 200 por trecho para aposentados e pensionistas do INSS em parceria com as companhias aéreas nacionais.",
-    "fonte_url": "https://www.gov.br/portos-e-aeroportos/pt-br/assuntos/voa-brasil"
+    "fonte_url": "https://www.gov.br/portos-e-aeroportos/pt-br/assuntos/voa-brasil",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Passagens de avião a até R$ 200 por trecho",
+      "detalhe": "Permite que aposentados e pensionistas do INSS que não voaram nos últimos 12 meses viajem pagando valor fixo de até R$ 200 por trecho na baixa temporada."
+    }
   },
   {
     "data": "2024-11-18",
@@ -144,7 +169,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": null,
     "descricao": "Gratuidade total de todos os medicamentos do programa para beneficiários do Bolsa Família e distribuição nacional gratuita de absorventes.",
-    "fonte_url": "https://www.gov.br/saude/pt-br/composicao/sectics/farmacia-popular"
+    "fonte_url": "https://www.gov.br/saude/pt-br/composicao/sectics/farmacia-popular",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Medicamentos 100% gratuitos para Bolsa Família",
+      "detalhe": "Zera o custo de remédios essenciais para hipertensão, diabetes, asma e absorventes para 55 milhões de beneficiários do CadÚnico."
+    }
   },
   {
     "data": "2024-06-27",
@@ -153,7 +183,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": null,
     "descricao": "Sanção presidencial da lei que instituiu o Programa Mobilidade Verde e Inovação (Mover) e aprovou a taxação federal de 20% de Imposto de Importação sobre compras internacionais de até US$ 50 (art. 48), além do ICMS estadual.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14902.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14902.htm",
+    "impacto_bolso": {
+      "tipo": "onus",
+      "rotulo": "🔴 Ônus no Bolso: +20% de imposto federal (carga final de ~44% com ICMS)",
+      "detalhe": "Revogação da isenção tributária para encomendas internacionais de até US$ 50 (Shein, Shopee, AliExpress), elevando o custo final de roupas e eletrônicos para o consumidor médio."
+    }
   },
   {
     "data": "2024-05-01",
@@ -162,7 +197,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": null,
     "descricao": "Reajuste da faixa de isenção do IRPF beneficiando mais de 15 milhões de trabalhadores e aposentados que ganham até 2 salários mínimos.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14848.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14848.htm",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Até R$ 300/mês a mais para 15,8 milhões de trabalhadores",
+      "detalhe": "Desoneração direta no contracheque de quem ganha até dois salários mínimos, que ficou 100% livre da mordida do leão do Imposto de Renda."
+    }
   },
   {
     "data": "2024-04-22",
@@ -171,7 +211,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": 30000000000,
     "descricao": "Crédito produtivo para MEIs, pequenos negócios e inscritos no CadÚnico, além do programa Procred360 e Eco Invest Brasil.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14995.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14995.htm",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Crédito a juros reduzidos para MEIs e pequenos negócios",
+      "detalhe": "Taxas de juros menores com aval de fundo garantidor federal (FGO) e renegociação com até 90% de desconto para microempresas endividadas."
+    }
   },
   {
     "data": "2024-03-07",
@@ -198,7 +243,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": 7100000000,
     "descricao": "Poupança e incentivo financeiro mensal para permanência e conclusão de estudantes do ensino médio público.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14818.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14818.htm",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: R$ 200/mês + R$ 1.000 ao ano para estudantes",
+      "detalhe": "Poupança direta para estudantes do ensino médio da rede pública para reduzir o abandono escolar e garantir permanência na escola."
+    }
   },
   {
     "data": "2023-12-20",
@@ -216,7 +266,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": 30000000000,
     "descricao": "Sanção da lei que instituiu a cobrança periódica de IRPF ('come-cotas') sobre fundos fechados de investimento de alta renda e a tributação de aplicações financeiras e empresas em offshores no exterior.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm",
+    "impacto_bolso": {
+      "tipo": "onus",
+      "rotulo": "🔴 Ônus Fiscal: Cobrança de come-cotas sobre super-ricos e offshores",
+      "detalhe": "Fim do diferimento tributário para patrimônios acumulados em fundos fechados e contas no exterior, com retenção periódica de 15% a 22,5% de IRPF."
+    }
   },
   {
     "data": "2023-10-03",
@@ -225,7 +280,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": 53000000000,
     "descricao": "Renegociação de dívidas bancárias e comerciais para mais de 15 milhões de famílias com descontos médios de 83% e teto para juros do cartão rotativo.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14690.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14690.htm",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Descontos médios de 83% e teto para juros do rotativo",
+      "detalhe": "Permitiu desnegativar o nome de 15 milhões de brasileiros e limitou os juros rotativos do cartão a no máximo 100% da dívida original."
+    }
   },
   {
     "data": "2023-08-31",
@@ -243,7 +303,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": null,
     "descricao": "Retomada da regra de aumento real anual do salário mínimo baseada na inflação (INPC) somada à variação positiva do PIB.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14663.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14663.htm",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Salário Mínimo com reajuste acima da inflação garantido",
+      "detalhe": "Fórmula permanente recuperando o poder de compra de 54 milhões de assalariados e aposentados todo mês de janeiro."
+    }
   },
   {
     "data": "2023-08-11",
@@ -261,7 +326,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": 13700000000,
     "descricao": "Retomada da Faixa 1 com subsídios de até 95%, isenção para beneficiários do BPC/Bolsa Família e prioridade para mulheres chefes de família.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Moradia própria gratuita para beneficiários do Bolsa Família/BPC",
+      "detalhe": "Isenção total de prestações do imóvel na Faixa 1 para famílias inscritas no Bolsa Família ou Benefício de Prestação Continuada."
+    }
   },
   {
     "data": "2023-07-03",
@@ -279,7 +349,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": 600.0,
     "descricao": "Benefício mínimo de R$ 600 com adicional de R$ 150 por criança até 6 anos e R$ 50 para gestantes e jovens, condicionado à vacinação e frequência escolar.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Mínimo de R$ 600 + adicionais de R$ 150 por filho",
+      "detalhe": "Benefício médio elevado para R$ 680 a R$ 700 mensais para mais de 20 milhões de famílias em situação de vulnerabilidade."
+    }
   },
   {
     "data": "2023-02-28",
@@ -288,7 +363,12 @@ window.DADOS.entregas = [
     "uf": "BR",
     "valor": null,
     "descricao": "Medidas do Executivo para fechamento da meta fiscal, incluindo reoneração gradual de combustíveis (PIS/Cofins), regulamentação de alíquotas de IOF sobre operações financeiras e revisão de benefícios setoriais.",
-    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/mpv/mpv1163.htm"
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/mpv/mpv1163.htm",
+    "impacto_bolso": {
+      "tipo": "onus",
+      "rotulo": "🔴 Ônus no Bolso: Volta de tributos federais sobre combustíveis",
+      "detalhe": "Reoneração de PIS/Cofins sobre gasolina e etanol, impactando diretamente os custos de transporte, frete de alimentos e combustível na bomba."
+    }
   },
   {
     "data": "2023-01-11",

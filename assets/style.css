@@ -892,6 +892,48 @@ h2::before {
 .card a { font-size: .88rem; font-weight: 600; display: inline-flex; align-items: center; gap: .25rem; }
 .card a:hover { color: var(--pt-white); }
 
+/* Card Impacto no Bolso (Ônus / Alívio) */
+.card-impacto-bolso {
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  margin: 0.6rem 0 0.8rem;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+.card-impacto-bolso.impacto-onus {
+  background: rgba(255, 56, 67, 0.08);
+  border: 1px solid rgba(255, 56, 67, 0.35);
+  border-left: 3px solid #ff3843;
+}
+.card-impacto-bolso.impacto-onus strong {
+  display: block;
+  color: #ff5252;
+  font-size: 0.82rem;
+  margin-bottom: 0.25rem;
+}
+.card-impacto-bolso.impacto-onus p {
+  margin: 0;
+  color: var(--txt);
+  opacity: 0.92;
+}
+
+.card-impacto-bolso.impacto-alivio {
+  background: rgba(43, 216, 138, 0.08);
+  border: 1px solid rgba(43, 216, 138, 0.35);
+  border-left: 3px solid #2bd88a;
+}
+.card-impacto-bolso.impacto-alivio strong {
+  display: block;
+  color: #2bd88a;
+  font-size: 0.82rem;
+  margin-bottom: 0.25rem;
+}
+.card-impacto-bolso.impacto-alivio p {
+  margin: 0;
+  color: var(--txt);
+  opacity: 0.92;
+}
+
 .fontes { padding-left: 1.2rem; margin-bottom: 1rem; }
 .fontes li { margin-bottom: .5rem; }
 .fontes a { color: var(--pt-red-light); }

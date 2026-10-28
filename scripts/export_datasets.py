@@ -88,11 +88,12 @@ def exportar_todos():
         # Salva CSV
         with open(EXPORT_DIR / "entregas.csv", "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-            writer.writerow(["ano", "data", "titulo", "area", "uf", "investimento", "descricao", "fonte_url"])
+            writer.writerow(["ano", "data", "titulo", "area", "uf", "investimento", "descricao", "impacto_tipo", "impacto_rotulo", "impacto_detalhe", "fonte_url"])
             for e in entregas:
                 dt = e.get("data", "")
                 ano = e.get("ano") or (dt.split("-")[0] if "-" in dt else "")
                 area = e.get("area") or e.get("tipo", "")
+                imp = e.get("impacto_bolso") or {}
                 writer.writerow([
                     ano,
                     dt,
@@ -101,6 +102,9 @@ def exportar_todos():
                     e.get("uf", ""),
                     e.get("valor") or e.get("investimento", ""),
                     e.get("descricao", ""),
+                    imp.get("tipo", ""),
+                    imp.get("rotulo", ""),
+                    imp.get("detalhe", ""),
                     e.get("fonte_url", "")
                 ])
         print(f"[✓] Entregas exportadas: {len(entregas)} atos -> data/export/entregas.json & entregas.csv")

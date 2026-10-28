@@ -389,10 +389,20 @@ let filtroAnoEntrega = 'todos';
 function renderEntregas() {
   const q = (buscaInput ? buscaInput.value : '').toLowerCase().trim();
   const lista = entregas.filter(e => {
-    const matchAno = filtroAnoEntrega === 'todos' || (e.data || '').startsWith(filtroAnoEntrega);
-    if (!matchAno) return false;
+    let matchFiltro = true;
+    if (filtroAnoEntrega === 'todos') {
+      matchFiltro = true;
+    } else if (filtroAnoEntrega === 'onus') {
+      matchFiltro = e.impacto_bolso && e.impacto_bolso.tipo === 'onus';
+    } else if (filtroAnoEntrega === 'alivio') {
+      matchFiltro = e.impacto_bolso && e.impacto_bolso.tipo === 'alivio';
+    } else {
+      matchFiltro = (e.data || '').startsWith(filtroAnoEntrega);
+    }
+    if (!matchFiltro) return false;
     if (!q) return true;
-    return [e.titulo, e.area, e.uf, e.descricao || '', e.data || ''].join(' ').toLowerCase().includes(q);
+    const impactoTxt = e.impacto_bolso ? `${e.impacto_bolso.rotulo} ${e.impacto_bolso.detalhe}` : '';
+    return [e.titulo, e.area, e.uf, e.descricao || '', e.data || '', impactoTxt].join(' ').toLowerCase().includes(q);
   });
 
   const gridEl = $('#grid-entregas');
@@ -401,12 +411,26 @@ function renderEntregas() {
   gridEl.innerHTML = lista.map(e => {
     const valorTxt = e.valor ? ` · <strong>${brlResumido(e.valor)}</strong>` : '';
     const descTxt = e.descricao ? `<p class="desc">${esc(e.descricao)}</p>` : '';
+    
+    let impactoHtml = '';
+    if (e.impacto_bolso) {
+      const imp = e.impacto_bolso;
+      const classeImp = imp.tipo === 'onus' ? 'impacto-onus' : 'impacto-alivio';
+      impactoHtml = `
+        <div class="card-impacto-bolso ${classeImp}">
+          <strong>${esc(imp.rotulo)}</strong>
+          <p>${esc(imp.detalhe)}</p>
+        </div>
+      `;
+    }
+
     return `
       <article class="card">
         <div>
           <span class="tag">${esc(e.area)} · ${esc(e.uf)}</span>
           <h3>${esc(e.titulo)}</h3>
           ${descTxt}
+          ${impactoHtml}
         </div>
         <div>
           <p class="meta-entrega">${esc(e.data)}${valorTxt}</p>
