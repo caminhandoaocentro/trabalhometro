@@ -3,6 +3,20 @@
 window.DADOS = window.DADOS || {};
 window.DADOS.entregas = [
   {
+    "data": "2026-09-03",
+    "titulo": "Queda da Taxa das Blusinhas Federal (Isenção até US$ 50 no Ano Eleitoral)",
+    "area": "Economia",
+    "uf": "BR",
+    "valor": null,
+    "descricao": "Sanção presidencial da lei que zerou a alíquota federal de 20% do Imposto de Importação sobre compras internacionais de até US$ 50 (permanecendo o ICMS estadual), após forte desgaste popular. A isenção foi questionada no STF pela CNI e CNC na ADI 7.973.",
+    "fonte_url": "https://www.senado.leg.br/noticias",
+    "impacto_bolso": {
+      "tipo": "alivio",
+      "rotulo": "🟢 Alívio no Bolso: Fim do imposto federal de 20% em remessas até US$ 50",
+      "detalhe": "Zera o imposto federal de importação para compras populares na Shein, Shopee e AliExpress às vésperas da eleição, aliviando o custo final ao consumidor após dois anos de cobrança."
+    }
+  },
+  {
     "data": "2026-05-15",
     "titulo": "Entregas de Infraestrutura e Mobilidade Urbana da COP30",
     "area": "Infraestrutura",
@@ -178,16 +192,16 @@ window.DADOS.entregas = [
   },
   {
     "data": "2024-06-27",
-    "titulo": "Taxa das Blusinhas e Programa Mover (Lei 14.902)",
+    "titulo": "Taxa das Blusinhas e Programa Mover (Lei 14.902/2024)",
     "area": "Economia",
     "uf": "BR",
     "valor": null,
-    "descricao": "Sanção presidencial da lei que instituiu o Programa Mobilidade Verde e Inovação (Mover) e aprovou a taxação federal de 20% de Imposto de Importação sobre compras internacionais de até US$ 50 (art. 48), além do ICMS estadual.",
+    "descricao": "Sanção presidencial da lei que instituiu o Programa Mobilidade Verde (Mover) e aprovou a taxação federal de 20% de Imposto de Importação sobre compras internacionais de até US$ 50 (art. 48), além do ICMS estadual. A taxa vigorou até setembro de 2026, quando a alíquota federal foi zerada às vésperas da eleição.",
     "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14902.htm",
     "impacto_bolso": {
       "tipo": "onus",
-      "rotulo": "🔴 Ônus no Bolso: +20% de imposto federal (carga final de ~44% com ICMS)",
-      "detalhe": "Revogação da isenção tributária para encomendas internacionais de até US$ 50 (Shein, Shopee, AliExpress), elevando o custo final de roupas e eletrônicos para o consumidor médio."
+      "rotulo": "🔴 Ônus no Bolso (2024-2026): +20% de imposto federal (custo final ~44% com ICMS)",
+      "detalhe": "Revogou a isenção tributária para encomendas internacionais de até US$ 50 (Shein, Shopee, AliExpress), elevando o custo final de roupas e eletrônicos para o consumidor médio durante dois anos."
     }
   },
   {
