@@ -100,6 +100,63 @@ if (avaliacao) {
   }
 }
 
+// 2.1 Diagnóstico Macroeconômico: Custo de Vida vs. Motores do PIB
+const macro = window.DADOS?.macroeconomia;
+if (macro) {
+  const macroTitEl = $('#macro-titulo');
+  const macroTeseEl = $('#macro-tese');
+  if (macroTitEl && macro.diagnostico?.titulo) macroTitEl.textContent = macro.diagnostico.titulo;
+  if (macroTeseEl && macro.diagnostico?.tese) macroTeseEl.textContent = macro.diagnostico.tese;
+
+  const indGridEl = $('#grid-macro-indicadores');
+  if (indGridEl && macro.termometro_indicadores) {
+    indGridEl.innerHTML = macro.termometro_indicadores.map(ind => `
+      <div class="macro-indicador-card card-status-${ind.status}">
+        <div class="macro-ind-topo">
+          <span class="macro-ind-icone">${ind.icone}</span>
+          <span class="macro-ind-badge badge-${ind.status}">${ind.status === 'positivo' ? 'Celebrado' : (ind.status === 'alerta' ? 'Alerta Fiscal' : 'Gargalo Crítico')}</span>
+        </div>
+        <div class="macro-ind-val">${esc(ind.valor)}</div>
+        <div class="macro-ind-nome">${esc(ind.indicador)}</div>
+        <div class="macro-ind-sub">${esc(ind.sub)}</div>
+        <p class="macro-ind-detalhe">${esc(ind.detalhe)}</p>
+      </div>
+    `).join('');
+  }
+
+  const eixosGridEl = $('#grid-macro-eixos');
+  if (eixosGridEl && macro.eixos_analiticos) {
+    eixosGridEl.innerHTML = macro.eixos_analiticos.map(eixo => `
+      <article class="macro-eixo-card">
+        <div class="macro-eixo-header">
+          <span class="macro-eixo-icone">${eixo.icone}</span>
+          <h4>${esc(eixo.titulo)}</h4>
+        </div>
+        <div class="macro-eixo-comparativo">
+          <div class="macro-lado lado-governo">
+            <strong>🏛️ A Ação do Governo (Estímulo de Curto Prazo):</strong>
+            <p>${esc(eixo.o_que_o_governo_fez)}</p>
+          </div>
+          <div class="macro-lado lado-bolso">
+            <strong>🛒 A Conta no Custo de Vida (O Efeito Colateral):</strong>
+            <p>${esc(eixo.o_efeito_no_bolso)}</p>
+          </div>
+        </div>
+      </article>
+    `).join('');
+  }
+
+  const concEl = $('#macro-conclusao-box');
+  if (concEl && macro.conclusao_desenvolvimentista) {
+    concEl.innerHTML = `
+      <div class="conclusao-inner">
+        <span class="conclusao-tag">💡 Síntese Desenvolvimentista</span>
+        <p>${esc(macro.conclusao_desenvolvimentista)}</p>
+      </div>
+    `;
+  }
+}
+
 // 3. Gráfico de Gastos (Cartão Corporativo) com Chart.js
 const destaqueBoxEl = $('#destaque-gastos-box');
 const canvasChartEl = $('#grafico-chart');

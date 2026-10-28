@@ -15,6 +15,7 @@
     <a href="#" class="logo"><span class="estrela">★</span> Trabalh<span class="destaque">ô</span>metro</a>
     <nav>
       <a href="#avaliacao">Termômetro</a>
+      <a href="#custo-vida">Custo de Vida</a>
       <a href="#gastos">Gastos</a>
       <a href="#viagens">Viagens</a>
       <a href="#pac">Novo PAC</a>
@@ -59,6 +60,30 @@
         </div>
         <div id="grid-projetos-estruturantes" class="projetos-grid"></div>
       </div>
+    </section>
+
+    <section id="custo-vida" class="bloco">
+      <h2>Diagnóstico: Custo de Vida vs. Motores do PIB</h2>
+      <p class="sub">Por que as manchetes comemoram menor desemprego e PIB em alta, mas o cidadão e as empresas sentem a vida cada vez mais cara?</p>
+
+      <div class="manifesto-box macro-box">
+        <div class="manifesto-tag">⚖️ O Paradoxo Macroeconômico</div>
+        <h3 id="macro-titulo">A Anatomia do Crescimento Recente</h3>
+        <p id="macro-tese"></p>
+      </div>
+
+      <div class="macro-indicadores-wrapper">
+        <h3 style="color: var(--pt-white); margin-bottom: 0.5rem; font-size: 1.15rem;">📊 Os Indicadores em Contraste (IBGE, BC e Receita)</h3>
+        <p class="sub-mini" style="margin-bottom: 1.2rem;">O confronto direto entre os dados oficiais celebrados pelo governo e os gargalos fiscais e de custo de vida.</p>
+        <div id="grid-macro-indicadores" class="macro-indicadores-grid"></div>
+      </div>
+
+      <div class="macro-eixos-wrapper" style="margin-top: 2rem;">
+        <h3 style="color: var(--pt-white); margin-bottom: 0.5rem; font-size: 1.15rem;">🔍 Os 4 Eixos da Conta no Bolso</h3>
+        <div id="grid-macro-eixos" class="macro-eixos-grid"></div>
+      </div>
+
+      <div class="conclusao-macro-box" id="macro-conclusao-box"></div>
     </section>
 
     <section id="gastos" class="bloco">
@@ -224,6 +249,13 @@
           </div>
         </div>
         <div class="download-card">
+          <strong>📊 Macro &amp; Custo de Vida</strong>
+          <div class="download-links">
+            <a href="data/export/macroeconomia_indicadores.csv" download>CSV</a>
+            <a href="data/export/macroeconomia.json" download>JSON</a>
+          </div>
+        </div>
+        <div class="download-card">
           <strong>🪑 Compras Diretas &amp; Mobília</strong>
           <div class="download-links">
             <a href="data/export/compras_diretas.csv" download>CSV</a>
@@ -246,6 +278,7 @@
   <script src="data/viagens.js"></script>
   <script src="data/novopac.js"></script>
   <script src="data/avaliacao.js"></script>
+  <script src="data/macroeconomia.js"></script>
   <script src="data/entregas.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>

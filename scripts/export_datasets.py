@@ -128,6 +128,18 @@ def exportar_todos():
         (EXPORT_DIR / "avaliacao.json").write_text(json.dumps(avaliacao, indent=2, ensure_ascii=False), encoding="utf-8")
         print(f"[✓] Avaliação exportada -> data/export/avaliacao.json")
 
+    # 5.1 Macroeconomia & Custo de Vida
+    macro_js = DATA_DIR / "macroeconomia.js"
+    if macro_js.exists():
+        macro = extrair_json_de_js(macro_js)
+        (EXPORT_DIR / "macroeconomia.json").write_text(json.dumps(macro, indent=2, ensure_ascii=False), encoding="utf-8")
+        with open(EXPORT_DIR / "macroeconomia_indicadores.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["indicador", "valor", "subtitulo", "status", "detalhe"])
+            for ind in macro.get("termometro_indicadores", []):
+                writer.writerow([ind.get("indicador", ""), ind.get("valor", ""), ind.get("sub", ""), ind.get("status", ""), ind.get("detalhe", "")])
+        print(f"[✓] Macroeconomia exportada -> data/export/macroeconomia.json & macroeconomia_indicadores.csv")
+
     # 6. Metadados
     meta_js = DATA_DIR / "meta.js"
     if meta_js.exists():

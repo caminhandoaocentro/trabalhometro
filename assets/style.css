@@ -981,6 +981,229 @@ h2::before {
   border-color: var(--pt-red-light);
 }
 
+/* Macroeconomia: Custo de Vida vs. Motores do PIB */
+.macro-box {
+  border-left-color: #f59e0b;
+}
+
+.macro-indicadores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.macro-indicador-card {
+  background: var(--bg-card);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.macro-indicador-card:hover {
+  transform: translateY(-2px);
+}
+
+.card-status-positivo {
+  border-color: rgba(43, 216, 138, 0.3);
+}
+.card-status-positivo:hover {
+  border-color: rgba(43, 216, 138, 0.6);
+}
+
+.card-status-alerta {
+  border-color: rgba(245, 158, 11, 0.35);
+}
+.card-status-alerta:hover {
+  border-color: rgba(245, 158, 11, 0.7);
+}
+
+.card-status-critico {
+  border-color: rgba(255, 82, 82, 0.35);
+}
+.card-status-critico:hover {
+  border-color: rgba(255, 82, 82, 0.7);
+}
+
+.macro-ind-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.macro-ind-icone {
+  font-size: 1.4rem;
+}
+
+.macro-ind-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 99px;
+  letter-spacing: 0.5px;
+}
+
+.badge-positivo {
+  background: rgba(43, 216, 138, 0.15);
+  color: #2bd88a;
+  border: 1px solid rgba(43, 216, 138, 0.35);
+}
+
+.badge-alerta {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.badge-critico {
+  background: rgba(255, 82, 82, 0.15);
+  color: #ff5252;
+  border: 1px solid rgba(255, 82, 82, 0.35);
+}
+
+.macro-ind-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--pt-white);
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+.macro-ind-nome {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--fg);
+  margin-bottom: 0.2rem;
+}
+
+.macro-ind-sub {
+  font-size: 0.78rem;
+  color: var(--mut);
+  margin-bottom: 0.7rem;
+}
+
+.macro-ind-detalhe {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  line-height: 1.45;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 0.6rem;
+  margin: 0;
+  margin-top: auto;
+}
+
+.macro-eixos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.macro-eixo-card {
+  background: var(--bg-card);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 1.3rem;
+  transition: border-color 0.2s;
+}
+
+.macro-eixo-card:hover {
+  border-color: rgba(215, 25, 32, 0.4);
+}
+
+.macro-eixo-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.macro-eixo-icone {
+  font-size: 1.3rem;
+}
+
+.macro-eixo-header h4 {
+  font-size: 1.08rem;
+  color: var(--pt-white);
+  margin: 0;
+}
+
+.macro-eixo-comparativo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.macro-lado {
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.macro-lado strong {
+  display: block;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+
+.lado-governo {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  color: #bfdbfe;
+}
+.lado-governo strong {
+  color: #60a5fa;
+}
+
+.lado-bolso {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  color: #fde68a;
+}
+.lado-bolso strong {
+  color: #fbbf24;
+}
+
+.conclusao-macro-box {
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg, rgba(215, 25, 32, 0.12), rgba(15, 23, 42, 0.6));
+  border: 1px solid rgba(215, 25, 32, 0.35);
+  border-radius: 12px;
+  padding: 1.3rem;
+}
+
+.conclusao-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--pt-red-light);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.conclusao-inner p {
+  color: var(--pt-white);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .macro-eixo-comparativo {
+    grid-template-columns: 1fr;
+  }
+}
+
 footer {
   text-align: center; color: var(--mut); padding: 3rem 1rem; font-size: .88rem;
   border-top: 1px solid var(--borda);

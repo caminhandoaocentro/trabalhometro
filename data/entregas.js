@@ -112,9 +112,9 @@ window.DADOS.entregas = [
     "descricao": "Viabilização de passagens aéreas a preços populares de até R$ 200 por trecho para aposentados e pensionistas do INSS em parceria com as companhias aéreas nacionais.",
     "fonte_url": "https://www.gov.br/portos-e-aeroportos/pt-br/assuntos/voa-brasil",
     "impacto_bolso": {
-      "tipo": "alivio",
-      "rotulo": "🟢 Alívio no Bolso: Passagens de avião a até R$ 200 por trecho",
-      "detalhe": "Permite que aposentados e pensionistas do INSS que não voaram nos últimos 12 meses viajem pagando valor fixo de até R$ 200 por trecho na baixa temporada."
+      "tipo": "alerta",
+      "rotulo": "🟡 Benefício Focalizado: Passagens a R$ 200 (com Subsídio Cruzado)",
+      "detalhe": "Permite que aposentados do INSS que não voaram nos últimos 12 meses comprem trechos por até R$ 200 na baixa temporada. Crítica desenvolvimentista: não resolve os custos estruturais da aviação (combustível QAV e infraestrutura) e tende a gerar subsídio cruzado, encarecendo os demais assentos comerciais para a classe trabalhadora e quem voa a trabalho."
     }
   },
   {
