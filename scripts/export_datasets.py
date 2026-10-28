@@ -135,9 +135,17 @@ def exportar_todos():
         (EXPORT_DIR / "macroeconomia.json").write_text(json.dumps(macro, indent=2, ensure_ascii=False), encoding="utf-8")
         with open(EXPORT_DIR / "macroeconomia_indicadores.csv", "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-            writer.writerow(["indicador", "valor", "subtitulo", "status", "detalhe"])
+            writer.writerow(["indicador", "valor", "subtitulo", "status", "detalhe", "fonte_nome", "fonte_url"])
             for ind in macro.get("termometro_indicadores", []):
-                writer.writerow([ind.get("indicador", ""), ind.get("valor", ""), ind.get("sub", ""), ind.get("status", ""), ind.get("detalhe", "")])
+                writer.writerow([
+                    ind.get("indicador", ""),
+                    ind.get("valor", ""),
+                    ind.get("sub", ""),
+                    ind.get("status", ""),
+                    ind.get("detalhe", ""),
+                    ind.get("fonte_nome", ""),
+                    ind.get("fonte_url", "")
+                ])
         print(f"[✓] Macroeconomia exportada -> data/export/macroeconomia.json & macroeconomia_indicadores.csv")
 
     # 6. Metadados

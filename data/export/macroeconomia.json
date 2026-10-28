@@ -11,7 +11,9 @@
       "sub": "Mínima histórica em quase 10 anos",
       "status": "positivo",
       "icone": "📉",
-      "detalhe": "Queda na taxa de desocupação (IBGE/PNAD), mas com vagas predominantemente concentradas no setor de serviços de baixa remuneração e informalidade."
+      "detalhe": "Queda na taxa de desocupação (IBGE/PNAD), mas com vagas predominantemente concentradas no setor de serviços de baixa remuneração e informalidade.",
+      "fonte_nome": "IBGE · PNAD Contínua",
+      "fonte_url": "https://www.ibge.gov.br/estatisticas/sociais/trabalho/9173-pesquisa-nacional-por-amostra-de-domicilios-continua-trimestral.html"
     },
     {
       "indicador": "Crescimento do PIB",
@@ -19,7 +21,9 @@
       "sub": "Média anual acumulada",
       "status": "positivo",
       "icone": "📊",
-      "detalhe": "Puxado pela injeção da PEC da Transição (R$ 170 bi), pagamento de precatórios (R$ 90 bi), consumo das famílias e exportações do agronegócio e petróleo."
+      "detalhe": "Puxado pela injeção da PEC da Transição (R$ 170 bi), pagamento de precatórios (R$ 90 bi), consumo das famílias e exportações do agronegócio e petróleo.",
+      "fonte_nome": "IBGE · Contas Nacionais",
+      "fonte_url": "https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9300-contas-nacionais-trimestrais.html"
     },
     {
       "indicador": "Taxa de Juros (Selic)",
@@ -27,7 +31,9 @@
       "sub": "Dois dígitos / Juro real mais alto do mundo",
       "status": "alerta",
       "icone": "🏦",
-      "detalhe": "Banco Central mantém juros restritivos para conter a pressão inflacionária provocada pelo déficit público e pela alta da dívida do governo."
+      "detalhe": "Banco Central mantém juros restritivos para conter a pressão inflacionária provocada pelo déficit público e pela alta da dívida do governo.",
+      "fonte_nome": "Banco Central do Brasil · Copom",
+      "fonte_url": "https://www.bcb.gov.br/controleinflacao/taxaselic"
     },
     {
       "indicador": "Arrecadação Federal",
@@ -35,7 +41,9 @@
       "sub": "Recorde histórico de tributos",
       "status": "alerta",
       "icone": "💸",
-      "detalhe": "Aumento da carga efetiva sobre o consumo diário (combustíveis, compras internacionais de até US$ 50, IOF e reoneração da folha de pagamento)."
+      "detalhe": "Aumento da carga efetiva sobre o consumo diário (combustíveis, compras internacionais de até US$ 50, IOF e reoneração da folha de pagamento).",
+      "fonte_nome": "Receita Federal · Relatórios Mensais",
+      "fonte_url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/relatorios/arrecadacao"
     },
     {
       "indicador": "Taxa de Investimento (FBCF)",
@@ -43,7 +51,9 @@
       "sub": "Do PIB (abaixo do necessário de 22%-25%)",
       "status": "critico",
       "icone": "🏭",
-      "detalhe": "A Formação Bruta de Capital Fixo (fábricas, portos, máquinas e tecnologia) segue estagnada, caracterizando um crescimento puxado por consumo e não por capacidade produtiva."
+      "detalhe": "A Formação Bruta de Capital Fixo (fábricas, portos, máquinas e tecnologia) segue estagnada, caracterizando um crescimento puxado por consumo e não por capacidade produtiva.",
+      "fonte_nome": "IPEA / IBGE · Indicador FBCF",
+      "fonte_url": "https://www.ipea.gov.br/cartadacojuntura/index.php/tag/formacao-bruta-de-capital-fixo/"
     },
     {
       "indicador": "Dívida Bruta da União",
@@ -51,7 +61,9 @@
       "sub": "Do PIB (trajetória de elevação contínua)",
       "status": "critico",
       "icone": "📈",
-      "detalhe": "Aumento do endividamento público para bancar a expansão de despesas obrigatórias, gerando desconfiança fiscal e encarecendo os juros futuros."
+      "detalhe": "Aumento do endividamento público para bancar a expansão de despesas obrigatórias, gerando desconfiança fiscal e encarecendo os juros futuros.",
+      "fonte_nome": "Banco Central · Estatísticas Fiscais",
+      "fonte_url": "https://www.bcb.gov.br/estatisticas/estatisticasfiscais"
     }
   ],
   "eixos_analiticos": [

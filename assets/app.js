@@ -120,6 +120,7 @@ if (macro) {
         <div class="macro-ind-nome">${esc(ind.indicador)}</div>
         <div class="macro-ind-sub">${esc(ind.sub)}</div>
         <p class="macro-ind-detalhe">${esc(ind.detalhe)}</p>
+        ${ind.fonte_url ? `<a href="${esc(ind.fonte_url)}" target="_blank" rel="noopener" class="macro-link-fonte">🏛️ ${esc(ind.fonte_nome || 'Fonte Oficial')} →</a>` : ''}
       </div>
     `).join('');
   }

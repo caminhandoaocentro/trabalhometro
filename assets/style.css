@@ -1098,6 +1098,21 @@ h2::before {
   margin-top: auto;
 }
 
+.macro-link-fonte {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--pt-red-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.macro-link-fonte:hover {
+  color: var(--pt-white);
+  text-decoration: underline;
+}
+
 .macro-eixos-grid {
   display: flex;
   flex-direction: column;
